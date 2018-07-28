@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<columns>
+    <column title="日期" name="StatDate" period="1,3,4,5,8,10,12" />
+    <column title="小时" name="Hour" period="10,11" />
+    <column title="新增用户" name="NewUserCount">
+        <column title="所有" name="NewUserCount" reportType="new" />
+        <column title="二次激活" name="NewUserCount_SecAct2" reportType="new" period="1" softId=">0" />
+        <column title="有ROOT权限" name="NewUserCount_Broken" reportType="new" period="1,3,4,5,12" byChannel="false" softId=">0" platform="4,9" />
+        <column title="越狱" name="NewUserCount_Broken" reportType="new" period="1,3,4,5,12" byChannel="false" softId=">0" platform="1,7" />
+        <column title="无ROOT权限" name="NewUserCount_NotBroken" reportType="new" period="1,3,4,5,12" byChannel="false" softId=">0" platform="4,9" />
+        <column title="非越狱" name="NewUserCount_NotBroken" reportType="new" period="1,3,4,5,12" byChannel="false" softId=">0" platform="1,7" />
+        
+    </column>
+    <column title="活跃用户" name="ActiveUserCount" period="1,3,4,5,8,10,12">
+        <column title="所有" name="ActiveUserCount" reportType="active" />
+        <column title="老用户" name="OldUserCount" reportType="active" period="1,3,4,5,8,12" onlyOldUser="false" />
+        <column title="老用户占比" name="OldPercent" reportType="active" period="1,3,4,5,8,12" onlyOldUser="false" />
+        <column title="未修正" name="ActiveUserCount_NotFromCache" reportType="active" period="1,3,4,5,12" byChannel="false" isInternalSoft="true" softId=">0" platform="0,1,4,7,9" />
+        <column title="有ROOT权限" name="ActiveUserCount_Broken" reportType="active" period="1,3,4,5,12" byChannel="false" softId=">0" platform="4,9" />
+        <column title="越狱" name="ActiveUserCount_Broken" reportType="active" period="1,3,4,5,12" byChannel="false" softId=">0" platform="1,7" />
+        <column title="无ROOT权限" name="ActiveUserCount_NotBroken" reportType="active" period="1,3,4,5,12" byChannel="false" softId=">0" platform="4,9" />
+        <column title="非越狱" name="ActiveUserCount_NotBroken" reportType="active" period="1,3,4,5,12" byChannel="false" softId=">0" platform="1,7" />
+        
+    </column>    
+    <column title="累积用户" name="TotalUserCount" period="1,3,4,5,12">
+    </column>
+    <column title="增长率" name="Growth" period="1,3,4,5,12" reportType="new" />
+    <column title="活跃度" name="ActivePercent" period="1,3,4,5,12" reportType="active" />
+</columns>

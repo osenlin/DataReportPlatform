@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ChannelAttributes id="0" name="" type="0">
+
+  <ChannelAttribute id="1" name="CPA推广" type="1">
+    <ChannelAttribute id="1" name="固定CPA" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+
+  <ChannelAttribute id="2" name="CPT推广" type="1">
+    <ChannelAttribute id="2" name="CPT付费" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+
+  <ChannelAttribute id="3" name="CPC推广" type="1">
+    <ChannelAttribute id="3" name="固定CPC" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+
+
+  <ChannelAttribute id="4" name="CPM推广" type="1">
+    <ChannelAttribute id="4" name="固定CPM" type="2">
+    </ChannelAttribute>
+    <ChannelAttribute id="5" name="阶梯CPM" type="2">
+    </ChannelAttribute>
+    <ChannelAttribute id="6" name="保底CPM" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+
+  <ChannelAttribute id="5" name="CPD推广" type="1">
+    <ChannelAttribute id="7" name="CPD付费" type="2">
+    </ChannelAttribute>
+ </ChannelAttribute>
+  
+  
+  <ChannelAttribute id="6" name="CPI推广" type="1">
+    <ChannelAttribute id="8" name="CPI付费" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+  <ChannelAttribute id="7" name="换量推广" type="1">
+    <ChannelAttribute id="9" name="资源互换" type="2">
+    </ChannelAttribute>
+    <ChannelAttribute id="10" name="海纳换量" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+  <ChannelAttribute id="8" name="免费推广" type="1">
+    <ChannelAttribute id="11" name="免费合作" type="2">
+    </ChannelAttribute>
+  </ChannelAttribute>
+ 
+</ChannelAttributes>
+    

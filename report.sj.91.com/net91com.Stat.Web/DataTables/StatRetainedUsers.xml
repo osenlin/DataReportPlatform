@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<columns>
+  <column title="日期" name="OrignalDate" />
+  <column title="新增用户" name="OrignalNewUserCount" />
+  <column title="第1天" name="RetainedUserCount1" period="1">
+    <column title="留存量" name="RetainedUserCount1" />
+    <column title="留存率" name="RetainedRate1" />
+  </column>
+  <column title="第2天" name="RetainedUserCount2" period="1">
+    <column title="留存量" name="RetainedUserCount2" />
+    <column title="留存率" name="RetainedRate2" />
+  </column>
+  <column title="第3天" name="RetainedUserCount3" period="1">
+    <column title="留存量" name="RetainedUserCount3" />
+    <column title="留存率" name="RetainedRate3" />
+  </column>
+  <column title="第4天" name="RetainedUserCount4" period="1">
+    <column title="留存量" name="RetainedUserCount4" />
+    <column title="留存率" name="RetainedRate4" />
+  </column>
+  <column title="第5天" name="RetainedUserCount5" period="1">
+    <column title="留存量" name="RetainedUserCount5" />
+    <column title="留存率" name="RetainedRate5" />
+  </column>
+  <column title="第6天" name="RetainedUserCount6" period="1">
+    <column title="留存量" name="RetainedUserCount6" />
+    <column title="留存率" name="RetainedRate6" />
+  </column>
+  <column title="第9天" name="RetainedUserCount9" period="1">
+    <column title="留存量" name="RetainedUserCount9" />
+    <column title="留存率" name="RetainedRate9" />
+  </column>
+  <column title="第14天" name="RetainedUserCount14" period="1">
+    <column title="留存量" name="RetainedUserCount14" />
+    <column title="留存率" name="RetainedRate14" />
+  </column>
+  <column title="第21天" name="RetainedUserCount21" period="1">
+    <column title="留存量" name="RetainedUserCount21" />
+    <column title="留存率" name="RetainedRate21" />
+  </column>
+  <column title="第30天" name="RetainedUserCount30" period="1">
+    <column title="留存量" name="RetainedUserCount30" />
+    <column title="留存率" name="RetainedRate30" />
+  </column>
+  <column title="第1周" name="RetainedUserCount1" period="3">
+    <column title="留存量" name="RetainedUserCount1" />
+    <column title="留存率" name="RetainedRate1" />
+  </column>
+  <column title="第2周" name="RetainedUserCount2" period="3">
+    <column title="留存量" name="RetainedUserCount2" />
+    <column title="留存率" name="RetainedRate2" />
+  </column>
+  <column title="第3周" name="RetainedUserCount3" period="3">
+    <column title="留存量" name="RetainedUserCount3" />
+    <column title="留存率" name="RetainedRate3" />
+  </column>
+  <column title="第4周" name="RetainedUserCount4" period="3">
+    <column title="留存量" name="RetainedUserCount4" />
+    <column title="留存率" name="RetainedRate4" />
+  </column>
+  <column title="第5周" name="RetainedUserCount5" period="3">
+    <column title="留存量" name="RetainedUserCount5" />
+    <column title="留存率" name="RetainedRate5" />
+  </column>
+  <column title="第6周" name="RetainedUserCount6" period="3">
+    <column title="留存量" name="RetainedUserCount6" />
+    <column title="留存率" name="RetainedRate6" />
+  </column>
+  <column title="第1月" name="RetainedUserCount1" period="5,12">
+    <column title="留存量" name="RetainedUserCount1" />
+    <column title="留存率" name="RetainedRate1" />
+  </column>
+  <column title="第2月" name="RetainedUserCount2" period="5,12">
+    <column title="留存量" name="RetainedUserCount2" />
+    <column title="留存率" name="RetainedRate2" />
+  </column>
+  <column title="第3月" name="RetainedUserCount3" period="5,12">
+    <column title="留存量" name="RetainedUserCount3" />
+    <column title="留存率" name="RetainedRate3" />
+  </column>
+  <column title="第4月" name="RetainedUserCount4" period="5,12">
+    <column title="留存量" name="RetainedUserCount4" />
+    <column title="留存率" name="RetainedRate4" />
+  </column>
+  <column title="第5月" name="RetainedUserCount5" period="5,12">
+    <column title="留存量" name="RetainedUserCount5" />
+    <column title="留存率" name="RetainedRate5" />
+  </column>
+  <column title="第6月" name="RetainedUserCount6" period="5,12">
+    <column title="留存量" name="RetainedUserCount6" />
+    <column title="留存率" name="RetainedRate6" />
+  </column>
+</columns>

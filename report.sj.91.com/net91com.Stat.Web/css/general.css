@@ -1,0 +1,216 @@
+body
+{
+	/*margin-top : 5px;
+	margin-left : 5px;*/
+	margin:2px;
+	text-align:center;
+	color: #353535;
+	font-family: Verdana,arial,'宋体';
+}
+body,table,td,input
+{
+	font-family:tahoma, verdana; 
+	font-size: 13px; 
+}
+/*input,textarea*/
+.defaultInput
+{
+	/*padding:2 5 5 2; */
+	border-left: buttonshadow 1px solid; 
+	border-bottom: buttonshadow 1px solid; 
+	border-right: buttonshadow 1px solid; /*#f0f0f0*/
+	border-top: buttonshadow 1px solid; 
+	color:#000000;
+	margin:1px;
+}
+
+.contextTextBox
+{
+	color:Red;
+	/*padding:2 5 5 2; */
+	border-left: buttonshadow 1px solid; 
+	border-bottom: buttonshadow 1px solid; 
+	border-right: buttonshadow 1px solid; /*#f0f0f0*/
+	border-top: buttonshadow 1px solid; 
+	margin:1px;	
+}
+A:link, A:active
+{
+	color: #598527;
+	text-decoration: none;
+}
+A:visited
+{  
+	color: #598527;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #598527;
+	text-decoration: underline;
+}
+.defaultButton
+{
+	/*padding:2 5 3 2; 
+	border-right: buttonshadow 1px solid; 
+	border-top: #f5f5f5 1px solid; 
+	border-left: #f5f5f5 1px solid; 
+	border-bottom: buttonshadow 1px solid; 
+	background-color: buttonface; 
+	cursor:hand; 
+	color:#000000;
+	
+	background:url(images/group_bg.gif);
+	*/
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+.defaultButton_add
+{
+	border: 1px solid #7b9ebd;
+	PADDING-RIGHT: 2px;
+		PADDING-LEFT: 2px;
+		FONT-SIZE: 12px;
+		FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+		CURSOR: hand;
+		COLOR: black;
+		PADDING-TOP: 2px;
+		height: 22px;
+}
+.defaultButton_pass
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+.defaultButton_hidden
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+
+.defaultButton_delete
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+.defaultButton_search
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+
+/*列表、下拉按件边框*/
+.DropDownListBorder
+{
+	border:0px dashed #AAAAAA;
+	position:absolute;
+	overflow:hidden
+}
+.DropDownListBody
+{
+	margin:-2px;
+}
+/*主表格样式*/
+.contextTable
+{
+	border-color:#7c7c94;
+	border-collapse:collapse;
+}
+/*主表格单元格样式*/
+.contextTable td
+{
+	border-color:#7c7c94;
+	/*border:1px solid #7c7c94*/
+}
+/*标题*/
+h1
+{
+	font-family:tahoma, verdana; 
+	font-size: 18px;
+	font-weight:bold;
+	margin-bottom:1px;
+}
+.DateTimeButton
+{
+	BACKGROUND-IMAGE: url(../images/DateTime.ico);
+	cursor:hand;
+	border:0px;
+	WIDTH: 17px;
+	HEIGHT: 16px;
+	margin-left:-5px
+}
+.contextTd
+{
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:1px;
+}
+.treeTd
+{
+	width:250px
+}
+.titleTd
+{
+	padding:3px;
+}
+
+.MaskDiv
+{
+	z-index: 1;
+	right: 0px;
+	background: #555555;
+	filter: alpha(opacity=60);
+	left: 0px;
+	width: expression(document.body.clientWidth-1);
+	bottom: 0px;
+	position: absolute;
+	top: 0px;
+	height: expression(document.body.clientHeight-1);
+}
+
+

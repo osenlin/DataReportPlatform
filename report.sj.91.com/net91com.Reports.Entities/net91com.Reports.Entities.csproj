@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A449CA-C8C1-42AE-9121-798B2B0D0F0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net91com.Reports.Entities</RootNamespace>
+    <AssemblyName>net91com.Reports.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="net91com.Core, Version=1.0.4862.24805, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\00通用项目\Reference\net91com.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\net91com.Stat.Web\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.ResourceDataAccess">
+      <HintPath>..\..\..\00通用项目\Reference\Res91com.ResourceDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.SoftModel">
+      <HintPath>..\net91com.Stat.Web\Assembly\Res91com.SoftModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiEntity\Api_AndroidMarketIdentifier.cs" />
+    <Compile Include="ApiEntity\Api_AppDownCount.cs" />
+    <Compile Include="ApiEntity\Api_BaiduUnionGames.cs" />
+    <Compile Include="ApiEntity\Api_DownCount.cs" />
+    <Compile Include="ApiEntity\Api_HwImeiFirstLoginDate.cs" />
+    <Compile Include="ApiEntity\Api_PandaBook.cs" />
+    <Compile Include="ApiEntity\Api_PositionDownCount.cs" />
+    <Compile Include="ApiEntity\Api_ResScheduleDown.cs" />
+    <Compile Include="ApiEntity\Api_SummaryUsersCount.cs" />
+    <Compile Include="B_Other\B_AuthorEntity.cs" />
+    <Compile Include="B_Other\B_DownPositionEntity.cs" />
+    <Compile Include="B_Other\B_ResCateEntity.cs" />
+    <Compile Include="B_Other\B_ResInfo.cs" />
+    <Compile Include="B_Other\B_ResUninstallEntity.cs" />
+    <Compile Include="B_Other\B_ResUninstallParams.cs" />
+    <Compile Include="B_Other\B_VersionEntity.cs" />
+    <Compile Include="DataBaseEntity\AreaRankInfo.cs" />
+    <Compile Include="DataBaseEntity\Config_ProjectSource.cs" />
+    <Compile Include="DataBaseEntity\Direct_Config.cs" />
+    <Compile Include="DataBaseEntity\LinkAdCount.cs" />
+    <Compile Include="DataBaseEntity\LinkAdStatRetainedUsers.cs" />
+    <Compile Include="DataBaseEntity\LinkTagCount.cs" />
+    <Compile Include="DataBaseEntity\LinkTagInfo.cs" />
+    <Compile Include="DataBaseEntity\LinkTagLog.cs" />
+    <Compile Include="DataBaseEntity\LogExportTask.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_Areas.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_ChannelAdmins.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_CooperateCustomers.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_ISP.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_NetModes.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_StatUsersByISP.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_StatMAC2IMEI.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StataUnionGamesCount.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownAdEntity.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownCountsByExtendAttrLst_SUM.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownCountsByResIDEntity.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownCountsBySoft_SUM.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownCPAEntity.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownPositionDistribution.cs" />
+    <Compile Include="D_DownLoadStatisticsEntities\D_StatDownRank_SUM.cs" />
+    <Compile Include="Enums\ApiStatus.cs" />
+    <Compile Include="Enums\ClientTypeEnum.cs" />
+    <Compile Include="TableTemplate\BaiduReportTableTemplate.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_SoftVersions.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_ChannelCategories.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_ChannelCustomers.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_ChannelFromClient.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_Channels.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_StatUsers.cs" />
+    <Compile Include="DataBaseEntity\Sjqd_StatRetainedUsers.cs" />
+    <Compile Include="JsEntity\JQueryDataTableData.cs" />
+    <Compile Include="JsEntity\LineChart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewEntity\KeyValueModel.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Download_BaiduAndroidMarket.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Download_BaiduSpecial.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Download_BaiduSummary.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\DownRankByIdentifier.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\DownSpeedLog.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Down_PositionCate.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Down_PositionTitle.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Down_StatDownCountByTitle.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Down_StatDownCountByVersion.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\Down_UsersSumDownCount.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\MessageStat.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\RescourceAdsOptions.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResDownLoadRankByStatType.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResDownLoadRankByStatType_Detail.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResDownLoad_AndroidMarket.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResouceDownCountByCate.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResouceRecommendPositionDetail.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceDownLoad.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceDownloadCount_Position.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceLogDetail.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceLogTotal.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceRecommendDetail.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceRecommendNoPosition.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceRecommendTotal.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResourceRecommendTotalByPosition.cs" />
+    <Compile Include="ViewEntity\R_DownloadStatistics\ResScheduleDownSummary.cs" />
+    <Compile Include="ViewEntity\R_UserAnalysis\ChannelAttribute.cs" />
+    <Compile Include="ViewEntity\R_UserAnalysis\User_BaiduSummary.cs" />
+    <Compile Include="B_Other\B_AreaEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\00通用项目\net91com.Stat.Core\net91com.Stat.Core.csproj">
+      <Project>{15b4d9e7-b3d9-40d3-8c96-909a64ef363b}</Project>
+      <Name>net91com.Stat.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

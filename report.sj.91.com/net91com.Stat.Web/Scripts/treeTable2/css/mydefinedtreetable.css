@@ -1,0 +1,81 @@
+﻿ 
+table.treetable span.indenter {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  width: 19px;
+}
+
+table.treetable span.indenter a {
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-decoration: none;
+  width: 19px;
+}
+
+table.treetable caption {
+
+  margin-bottom: .2em;
+}
+
+
+table.treetable thead tr th {
+
+  padding: .3em 1em .1em 1em;
+  text-align: left;
+}
+
+table.treetable tbody tr td {
+  cursor: default;
+  padding: .3em 1em;
+}
+
+table.treetable span {
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding: .2em 0 .2em 1.5em;
+}
+
+table.treetable span.file {
+  background-image: url(../images/file.png);
+}
+
+table.treetable span.folder {
+  background-image: url(../images/folder.png);
+}
+
+table.treetable tr.collapsed span.indenter a {
+  background-image: url(../images/expand.png);
+}
+
+table.treetable tr.expanded span.indenter a {
+  background-image: url(../images/collapse.png);
+}
+
+
+
+table.treetable tr.collapsed.selected span.indenter a {
+  background-image: url(../images/expand-light.png);
+}
+
+table.treetable tr.expanded.selected span.indenter a {
+  background-image: url(../images/collapse-light.png);
+}
+
+
+
+table.treetable tr.collapsed.accept td span.indenter a {
+  background-image: url(../images/expand-light.png);
+}
+
+table.treetable tr.expanded.accept td span.indenter a {
+  background-image: url(../images/collapse-light.png);
+}
+

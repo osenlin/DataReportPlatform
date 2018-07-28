@@ -1,0 +1,540 @@
+﻿ 
+/*table 报表样式 */
+table.tablesorter {
+font-family:arial;
+background-color: #CDCDCD;
+margin:4px 0pt 15px;
+font-size: 8pt;
+width: 100%;
+text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+background-color: #e6EEEE;
+border: 1px solid #FFF;
+
+font-size: 8pt;
+padding: 4px;
+}
+table.tablesorter thead tr .header {
+background-image: url(bg.gif);
+background-repeat: no-repeat;
+background-position: center right;
+cursor: pointer;
+}
+table.tablesorter tbody td {
+color: #3D3D3D;
+padding: 4px;
+background-color: #FFF;
+vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+background: url("../Images/dt-arrow-up.png") no-repeat scroll right center transparent;
+}
+table.tablesorter thead tr .headerSortDown {
+background: url("../Images/dt-arrow-dn.png") no-repeat scroll right center transparent;
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+} 
+
+body
+{
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	}
+
+/*报表头部区域*/
+.title
+{
+    background-color: #E9EFFF;
+    background-image: url("../Images/bg_sub_title.jpg");
+    background-repeat: repeat-x;
+    border-color: #BBCCDD;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    color: #1E6FAF;
+    line-height: 20px;
+    padding: 5px;
+    left: 0;
+    height:25px;
+    
+}
+ 
+ /*报表周期div样式 */
+.userselected
+{
+	font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    color: #2C3136;
+    padding:2px 5px 5px 5px;
+    margin-top:5px;
+    
+	
+}
+ /*报表周期样式切换*/ 
+.userselecttype
+{
+	cursor: pointer;
+    outline-style: none;
+    text-decoration: none;
+    color: #1E6FAF;
+}
+.userselecttype2
+{
+	cursor: pointer;
+    outline-style: none;
+    text-decoration: none;
+    color: #1E1F0F;
+}
+ 
+ /*报表头部横条样式*/ 
+.tablehead
+{
+    background-image: url("../Images/bg_sub_title.jpg");
+    background-repeat:repeat;
+    border-color: #BBCCDD;
+    border-style: solid;
+    border-width: 1px 1px 0;
+ 
+    line-height: 20px;
+    padding: 5px;
+    height:20px;
+    border:1px solid #CCCCCC; 
+	}
+.tablehead2
+{
+    background-image: url("../Images/bg_tablehead.JPG");
+    background-repeat:repeat;
+    border-color: #BBCCDD;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    color: #1E6FAF;
+    line-height: 20px;
+    padding: 5px;
+    height:20px; 
+    border:1px solid #CCCCCC;
+	}
+ /*三个条件选择区域样式*/ 
+.caidan
+{
+	background-color: #1E6FAF;
+    background-image: url("../Images/bg_title.jpg");
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    height: 33px;
+    line-height: 20px;
+    /*padding: 2px 2px 2px 10px;*/
+    width:100%;
+    position:relative;
+    z-index:90;
+	
+	}
+ /*三个条件选择下拉框中div样式*/ 
+.caidan .dropdown
+{
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+    z-index: 90;
+    width:90%;
+ }
+ /*三个条件选择下拉框中div样式*/ 
+.dropdown .dropdownitem
+{
+	 display:inline-block;
+	 *display:inline;/*为了兼容ie6，ie7 */
+	 zoom:1;
+	 text-align:left;
+	 width:25%;
+	 z-index:99;
+	 position:relative;
+	}
+ /*三个条件选择下拉框中div样式*/ 
+.dropdownsonitem
+{
+	border-style: none solid solid;
+    border-width: 0 1px 1px;
+    color: #666666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 15px;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    width: 170px ;
+    z-index:98;
+    display:none; 
+    left:0px;
+	
+	}
+ /*三个条件选择下拉框中确定按钮那行样式*/ 
+.submitRow
+{
+	background-color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+	 
+	
+}
+/*为了兼容ie6，ie7*,* 表示ie6，ie7*/
+/*#containner
+{	
+	*position:relative;
+	*z-index:-999;
+	
+}*/
+
+
+ /*三个条件选择下拉框中每一项*/ 
+.paddedRow
+{
+	 border-bottom: 1px solid #B8BFC9;
+     padding: 10px;
+     background-image:url("../Images/downdivbg.jpg");
+     background-repeat:repeat-x;
+	}
+/*兼容ie6,7下的table tr的底框*/
+.paddedRow td
+{ 
+	border: 1px solid #B8BFC9;
+	border-left-style:hidden;
+	border-right-style:hidden;
+	 
+	
+	}
+.paddedRowTwo
+{
+	 border-bottom: 1px solid #B8BFC9;
+     padding: 5px;
+     background-image:url("../Images/downdivbg.jpg");
+     background-repeat:repeat-x;
+ }
+.paddedRowSon
+{
+	 border-bottom: 1px solid #B8BFC9;
+     padding: 10px;
+    /* background-color:#BBCCDD;*/
+     
+     
+	}
+
+/*三个条件选择下拉框中确定按钮*/  
+.normalbutton
+{
+	background-image: url("../Images/buttonsFixed.png");
+    
+    background-repeat: no-repeat;
+    border-width: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    padding: 0 0 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 114px;
+ }
+      /*三个条件选择链接样式*/  
+   .selectchoicelink
+   {
+   	     
+   	     outline-style:none;
+   	     text-decoration:none;
+   	     color:#FFFFFF;
+   	     font-size:11px;
+   	     padding:3px;
+   	     display:inline-block;width:100%;height:24px; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; 
+   	     
+   	}
+   	  /*三个条件选择链接文字*/
+   	.selectchoicelink span
+   	{
+   		 cursor:pointer;
+   		 outline-style:none;
+   		 text-decoration:none;
+   		 color:#FFFFFF;
+   		}
+   	  /*三个条件选择链接图片*/	
+   	.selectchoicelink img
+   	{
+   		 vertical-align:middle;
+   		 text-decoration:none;
+   		 position:relative;
+   		 border:0 none;
+   		 top:-2px;
+   		 left:5px;
+   		}
+   	  /*报表图下载*/
+   .download1
+   {
+   	     cursor:pointer;
+   	     outline-style:none;
+   	     text-decoration:none;
+   	     color: #1E6FAF;
+   	     font-size:13px;
+   	}
+  /*表格下载*/
+   	 .download2
+   {
+   	     cursor:pointer;
+   	     outline-style:none;
+   	     text-decoration:none;
+   	     color:#1E6FAF;
+   	     font-size:13px;
+   	}
+    /*表格下载图片样式*/
+   	.downloadimg
+   	{
+   	 
+   		 vertical-align:text-top;
+   		 text-decoration:none;
+   		 border:0 none;
+   		 
+   		}
+   /*做滚动的ul 和li 列表*/
+   ul
+   {
+   		 list-style:none;
+   		 padding:0;
+   		 margin:0;
+   	}
+  .printexcel
+  {
+  		 cursor:pointer;
+   	     outline-style:none;
+   	     text-decoration:none;
+   	     color:#1E6FAF;
+   	     font-size:13px;
+  	
+  	}
+  .divdetails
+  {
+  	border: 1px solid #CCCCCC;
+  	height:300px;
+  	margin-top:3px;
+  }
+  .divfordefault
+  {
+  	border: 1px solid #CCCCCC;
+  	 
+  	margin-top:3px;
+  	}
+  .leftdiv
+  {
+    width:70%;
+    float:left;
+  	}
+  .rightdiv
+  {
+  	color:	#1E6FAF;
+  	width:25%;
+  	float:right;
+  	 
+  	}
+  .rightdiv div 
+  {
+  	  padding: 7px 10px;
+  	  border: 1px solid #CCCCCC;
+  	  width:150px;
+  	}
+ 
+  
+  .divfordefault strong
+  {
+  	background: none repeat scroll 0 0 #F8F8F8;
+    color: #496E9F;
+	font-size: 14px;
+    font-weight: normal;
+    height: 32px;
+    padding-right: 5px;
+ }
+ 
+ .daytab
+ {
+ 	font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    vertical-align: top;
+ 	
+ }
+ /*tab 切换样式*/
+ .panel-title
+ {
+ 	    -moz-border-bottom-colors: none;
+		-moz-border-image: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: #B6D2E9;
+		border-style: solid;
+		border-width: 1px 1px 0;
+		height: 26px;
+		line-height: 26px;
+		margin: 0;
+		overflow: hidden;
+		padding: 2px 0 0;
+		background: -moz-linear-gradient(-90deg, #FFFFFF, #EEF6FB) repeat scroll 0 0 transparent;
+		
+}
+.panel-title ul
+{
+	list-style-type: none;
+    margin: 0;
+    
+	
+	}
+.panel-title ul li
+{
+	float:left;
+	}
+.column-tab {
+    height: 25px;
+    padding-left: 15px;
+    border-bottom: 1px solid #B6D2E9;
+}
+.column-tab li
+{ 
+    font-size:11px;
+    
+    }
+.tab-title
+{
+		  -moz-border-bottom-colors: none;
+            -moz-border-image: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #D5E2F3 #D5E2F3 #B6D2E9;
+            /*border-radius: 3px 3px 0 0;*/
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            font-size: 14px;
+            height: 24px;
+            line-height: 24px;
+            margin-right: 5px;
+            padding: 0 10px;
+            text-align: center;
+       
+	}
+.tab-title-current {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #FFFFFF !important;
+    }
+.panel-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #B6D2E9;
+    /*border-radius: 0 0 3px 3px;*/
+    border-style: solid;
+    border-width: 0 1px 1px;
+    margin-top: -1px;
+    overflow: hidden;
+    padding:5px;
+}
+/*tab切换样式结束*/
+  
+ /*分页样式*/
+        
+        .paginator
+        {
+            font: 11px Arial, Helvetica, sans-serif;
+            padding: 10px 20px 10px 0;
+            margin: 0px;
+            display:inline-block;
+            width:80%
+        }
+        .paginator a
+        {
+            padding: 1px 6px;
+            border: solid 1px #ddd;
+            background: #fff;
+            text-decoration: none;
+            margin-right: 2px;
+        }
+        .paginator a:visited
+        {
+            padding: 1px 6px;
+            border: solid 1px #ddd;
+            background: #fff;
+            text-decoration: none;
+        }
+        .paginator .cpb
+        {
+            padding: 1px 6px;
+            font-weight: bold;
+            font-size: 13px;
+            border: none;
+        }
+        .paginator a:hover
+        {
+            color: #fff;
+            background: #ffa501;
+            border-color: #ffa501;
+            text-decoration: none;
+        }   	 
+
+/*span操作样式*/
+ .caozuo
+        {
+            color: Black;
+            cursor: pointer;
+            margin-right: 4px;
+            display: inline-block;
+        }
+/*每个div 的主要样式*/
+  .main
+{
+margin: 0 auto;
+padding: 10px;
+}
+/*按钮和textbox 样式*/
+  .btnclass
+     {
+          BORDER-RIGHT: #7b9ebd 1px solid;
+           PADDING-RIGHT: 2px; 
+           BORDER-TOP: #7b9ebd 1px solid;
+           PADDING-LEFT: 2px; FONT-SIZE: 12px;
+           BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black;
+           PADDING-TOP: 2px; 
+           BORDER-BOTTOM: #7b9ebd 1px solid;
+           background-color:#E6EEEE;
+          
+         }
+.txtboxclass
+{
+border: 1px solid #C4C2C2;
+}
+/*提示框样式*/
+.helpclass_span1
+{
+     font-size: 12px; font-weight: bold; color: Black; float:left;
+    
+    }
+.helpclass_span2
+{
+     float: right; margin-right: 8px
+    
+    }
+.helpclass_span2 img
+{ 
+    border:none;
+    
+ }
+ .helpclass_head
+ { margin-top:2px;
+     
+     }
+

@@ -1,0 +1,946 @@
+﻿
+
+/*+----------------------------------------------------------------------------
+//
+// 页面样式
+//
+//---------------------------------------------------------------------------*/
+
+
+
+td, body, span, div
+{
+    margin: 0px;
+    font-size: 9pt;
+    /*font-family: 宋体;*/
+    scrollbar-arrow-color: blue;
+    scrollbar-face-color: #E5F2FC;
+    scrollbar-highlight-color: #E5F2FC;
+    scrollbar-shadow-color: #E5F2FC;
+    cursor:default;
+}
+
+.MainBody 
+{ 
+    margin:0px 0px 0px 0px;    
+    text-align:center; 
+    background-color:#000; 
+    background:url(images/bg.jpg); }
+
+a
+{
+	color: blue;
+	font-family: 宋体;
+	text-decoration: none;
+	cursor:hand;
+
+}
+
+a:hover
+{
+	color: blue;
+	font-family: 宋体;
+	text-decoration: none;
+}
+
+a:link
+{
+	color: blue;
+	font-family: 宋体;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: blue;
+	font-family: 宋体;
+	text-decoration: none;
+}
+
+Select
+{
+	font-size: 10.4pt;
+	font-family:宋体;
+	color: buttontext;
+}
+
+
+
+.TopMenu
+{
+    cursor: pointer;
+    color: #666666;
+    background-image: url(../../App_Themes/Default/Images/nav_bg.gif);
+    font-family: verdana;
+    font-weight: bold;
+    cursor: hand;
+    padding: 0px;
+    border-bottom: 1px solid #dddddd;
+    height: 4;
+}
+
+.MenuDiv
+{
+    border: solid 1px #000000;
+}
+
+.MenuTitle
+{
+    width: 100%;
+    background-color: green;
+    list-style: none;
+}
+
+.LoginTable
+{
+    margin-left: 70;
+    margin-top: 60;
+    color: white;
+}
+
+.LoginTable td
+{
+    color: white;
+}
+
+.Td_Title2
+{
+      background-color:  #00688F;
+      padding-left:10px;
+      padding-right:2px;
+      text-align:right;
+}
+
+.Label_Title
+{
+    font-weight: bolder;
+    font-size: 10.4pt;
+    color: #00688F;
+    display:none;
+}
+
+.Label_Description
+{
+    font-size: 9pt;
+    color: #00688F;
+}
+
+.MaskDiv
+{
+	z-index: 1;
+	right: 0px;
+	background: #555555;
+	filter: alpha(opacity=60);
+	left: 0px;
+	width: expression(document.body.clientWidth-20);
+	bottom: 0px;
+	position: absolute;
+	top: 0px;
+	height: expression(window.screen.height-20);
+}
+
+.ListHead
+{
+    background-color: #75BEED;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ListHead td
+{
+   font-weight: bolder;
+    color: Black;
+    text-align: center;
+}
+
+.ListRow
+{
+    background-color:White;
+    height: 25px;
+}
+
+.ListAlternatingRow
+{
+    background-color: #E4F2FD;
+    height: 25px;
+}
+
+.ListSelectedRow
+{
+    background-color: #AFD9FF;
+}
+
+.ListSelectedRowInfo
+{
+    border: 1px solid #3a6ea5;
+    background-color: white;
+}
+
+.InfoTable
+{
+    background-color: #57566F;
+}
+
+.InfoTable_Head
+{
+    color: White;
+    font-weight: bolder;
+}
+
+.InfoTable_Item
+{
+    background-color: White;
+}
+
+.LargePanel
+{
+    background: white url(../../App_Themes/Default/Images/Sys_PanelBackground.gif) fixed no-repeat left bottom;
+}
+
+.TextData
+{
+    font-size: 10.4pt;
+    line-height: 150%;
+    font-family: 宋体;
+    letter-spacing: 1pt;
+}
+
+.PanelSearch
+{
+    border:solid 1px #9EC9FE;
+    background-color:#ECF3FD;
+    
+    margin:5px;
+    padding:10px
+}
+
+
+/*+----------------------------------------------------------------------------
+//
+// 按钮样式
+//
+//---------------------------------------------------------------------------*/
+
+.Login
+{
+    background-image: url(Images/login.gif);
+}
+.Button_70
+{
+    background: url(Images/Lib_ButtonImage_70.gif);
+    height: 21px;
+    width: 70px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    cursor: hand;
+    padding-top: 0px;
+    border: 1px;
+}
+
+.Button_40
+{
+    background: url(Images/Lib_ButtonImage_40.gif);
+    height: 21px;
+    width: 40px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    cursor: hand;
+    padding-top: 0px;
+    border: 1px;
+}
+
+.Button_100
+{
+    background: url(Images/Lib_ButtonImage_100.gif);
+    height: 21px;
+    width: 100px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    cursor: hand;
+    padding-top: 0px;
+    border: 1px;
+}
+
+.Button_120
+{
+    background: url(Images/Lib_ButtonImage_120.gif);
+    height: 21px;
+    width: 120px;
+    font-family: Tahoma;
+    font-size: 9pt;
+    cursor: hand;
+    padding-top: 0px;
+    border: 1px;
+}
+
+.Button_AfterInput
+{
+    font-size: 10.4pt;
+    height: 20;
+    border: #999999 1px solid;
+    background-color: buttonface;
+    margin-left: 2px;
+}
+
+.defaultInput
+{
+	/*padding:2 5 5 2; */
+	border-left: buttonshadow 1px solid; 
+	border-bottom: buttonshadow 1px solid; 
+	border-right: buttonshadow 1px solid; /*#f0f0f0*/
+	border-top: buttonshadow 1px solid; 
+	color:#000000;
+	margin:1px;
+}
+
+.defaultButton
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+
+.btnPrint
+{
+    BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+
+.btnClose
+{
+    BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+.btnReturn
+{
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid 
+}
+
+/*主表格样式*/
+.contextTable
+{
+	border-color:#7c7c94;
+	border-collapse:collapse;
+}
+/*主表格单元格样式*/
+.contextTable td
+{
+	border-color:#7c7c94;
+	/*border:1px solid #7c7c94*/
+}
+
+.defaultTable
+{
+	background-color: #cccccc;
+	border:0px solid;
+	
+	
+}
+
+.defaultTable td
+{
+	background-color: #ffffff;
+	height:28px;
+	padding-left:2px;
+}
+
+
+
+
+/*+----------------------------------------------------------------------------
+//
+// 输入框样式
+
+//
+//---------------------------------------------------------------------------*/
+
+.TextBox_Must
+{
+    font-family: 宋体;
+    font-size: 10.4pt;
+    color: buttontext;
+    height: 20px;
+    background-color: #FFEEC2;
+    border: #4B4B6F 1px solid;
+}
+
+.TextBox_Default
+{
+    font-family: 宋体;
+    font-size: 10.4pt;
+    color: buttontext;
+    border: #4B4B6F 1px solid;
+    height: 20px;
+    background-color: #fbfbfb;
+}
+
+.TextBox_ViewContent
+{
+    border: #4B4B6F 1px solid;
+    font-size: 10.4pt;
+    font-family: 宋体;
+    height: 20;
+    background-color: #fbfbfb;
+    overflow-y: visible;
+    border-bottom: #4B4B6F 1px solid;
+}
+
+
+/*+----------------------------------------------------------------------------
+//
+// 下拉框样式
+
+//
+//---------------------------------------------------------------------------*/
+
+.Select_Must
+{
+    height: 21pt;
+    font-family: 宋体;
+    font-size: 10.4pt;
+    background-color: Yellow;
+}
+
+
+
+/*+----------------------------------------------------------------------------
+//
+// 网页样式
+//
+//---------------------------------------------------------------------------*/
+
+.Body_Main
+{
+    margin: 0 0 0 0;
+    font-family: 宋体; /* 	scrollbar-arrow-color: #eeeeee; 	scrollbar-face-color: #F6F6F6; 	scrollbar-highlight-color: #F6F6F6; 	scrollbar-shadow-color: #F6F6F6; */
+    background-color: #f6f6f6;
+}
+
+.Body_SmallPanel
+{
+    padding: 10 10 10 10;
+    margin: 0 0 0 0;
+    font-family: 宋体; /* 	scrollbar-arrow-color: #eeeeee; 	scrollbar-face-color: #F6F6F6; 	scrollbar-highlight-color: #F6F6F6; 	scrollbar-shadow-color: #F6F6F6;*/
+    background-color: #f6f6f6;
+}
+
+.Body_LargePanel
+{
+    padding: 10 10 10 10;
+    margin: 0 0 0 0;
+    font-family: 宋体; /* 	scrollbar-arrow-color: #eeeeee; 	scrollbar-face-color: #F6F6F6; 	scrollbar-highlight-color: #F6F6F6; 	scrollbar-shadow-color: #F6F6F6;*/
+    /*background-color: #f6f6f6;*/
+}
+
+.Body_TreePage
+{
+    margin: 0 0 0 0;
+    font-family: 宋体;
+    padding: 0px;
+    scrollbar-face-color: #ffffff;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-3dlight-color: #cccccc;
+    scrollbar-arrow-color: #cccccc;
+    scrollbar-track-color: #e8eae8;
+    background-color: #f6f6f6;
+}
+
+.Body_Wizard
+{
+    margin: 0 0 0 0;
+    font-family: 宋体; /* 	scrollbar-arrow-color: #eeeeee; 	scrollbar-face-color: #F6F6F6; 	scrollbar-highlight-color: #F6F6F6; 	scrollbar-shadow-color: #F6F6F6; */
+    background-color: #f6f6f6;
+}
+
+.BodyEditPanel
+{
+    padding: 2 2 2 2;
+    margin: 0 0 0 0;
+    font-family: 宋体;
+    scrollbar-arrow-color: blue;
+    scrollbar-face-color: #E5F2FC;
+    scrollbar-highlight-color: #E5F2FC;
+    scrollbar-shadow-color: #E5F2FC;
+    background-color: #F7F7F7;
+}
+
+.BodyScroll
+{
+    padding: 2 2 2 2;
+    margin: 0 0 0 0;
+    font-family: 宋体;
+    scrollbar-arrow-color: blue;
+    scrollbar-face-color: #E5F2FC;
+    scrollbar-highlight-color: #E5F2FC;
+    scrollbar-shadow-color: #E5F2FC;
+    background-color: #F7F7F7;
+}
+
+
+.Grid
+{
+    width: 99%;
+    text-align: center;
+    background-color: #7C7C94;
+    border: 1px;
+    padding: 0px;
+}
+
+.ListHeader
+{
+    color: #787878;
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+
+.TabPager
+{
+    width: 97%;
+    text-align: center;
+    background-color: #ffffff;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    padding: 5px;
+}
+
+.TabLocation
+{
+    vertical-align: top;
+    background-color: #eeeeee;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-top: solid 1px #cccccc;
+    padding: 0;
+    width: 97%;
+    text-align: left;
+    height: 28;
+}
+
+
+.TabOperate
+{
+    width: 97%;
+    border-top: solid 1px #57566F;
+    border-left: solid 1px #57566F;
+    border-right: solid 1px #57566F;
+    padding: 0px;
+    background-image: url(images/grid_headerBg.gif);
+    background-color: #8988A5;
+    border-bottom: 1px solid #57566F;
+    height: 29px;
+    padding-left: 3px;
+    cursor: default;
+    color: #FFFFFF;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: center;
+}
+
+.TabEditPanel
+{
+    border: solid 0px #D3D3D3;
+    background-color: #ffffff;
+}
+
+.TabDescription
+{
+    width: 97%;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    height: 34px;
+}
+
+.LoadingTable
+{
+    border: solid 1px #498AC2;
+    height: 180px;
+    width: 390px;
+    text-align: center;
+}
+
+.LoadingTitle
+{
+    height: 28px;
+    width: 390px;
+    background-image: url(Images/SliderTitlebg.jpg);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 12;
+}
+.LoadingItem
+{
+    height: 158px;
+    width: 390px;
+    background-image: url(Images/SliderContentbg.jpg);
+    vertical-align: middle;
+    color: #327FC6;
+}
+
+.NavCategory
+{
+  background:url(Images/index_6.jpg) repeat-x bottom;
+}
+
+.NavCategory_Left
+{
+  background:url(images/index_5.jpg) no-repeat left bottom;
+}
+
+.BottomInfo
+{
+    border-top:solid 1px #9EC9FE;
+    background-color:#ECF3FD;
+   
+}
+
+
+#QuickLink a { color:#ffffff; margin:0 3px; }
+#QuickLink a:hover { color:#fc0; }
+
+#QuickLink
+{   
+  color:#ffffff;
+  padding:5px 0 5px 30px; 
+  margin:0px;
+  vertical-align:middle;
+  background:url(images/index_41.jpg) repeat-x;  
+}
+
+#QuickLinkDefault
+{
+    color:#ffffff;
+}
+
+.BottonInfo { line-height:31px; color:#fff; padding-top:0px;}
+#bottom a { color:#fff; margin:0 10px; }
+#bottom a:hover { color:#fc0; }
+#bottom { background:url(images/index_41.jpg) repeat-x; }
+.bg_left4 { background:url(images/index_40.jpg) no-repeat left; height:31px; padding-left:90px;}
+.bg_right4 { background:url(images/index_44.jpg) no-repeat right; }
+
+.Pager
+{
+    vertical-align:middle;
+}
+
+/* body */
+
+
+/*
+SimpleTreeView.css
+*/
+.SimpleEntertainmentTreeView div.AspNet-TreeView ul li
+{
+    white-space: nowrap;
+    padding: 3px 0 2px 0; 
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView ul ul
+{
+    margin: 2px 0 2px 10px;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView ul li img
+{
+    border: none;
+    vertical-align: middle;
+    margin: 0 2px 0 0;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView li a
+{
+    text-decoration: none;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView li.AspNet-TreeView-Leaf
+{
+    margin-left: 18px;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView .AspNet-TreeView-ClickableNonlink
+{
+    cursor: pointer;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView .AspNet-TreeView-Collapse
+{
+    background: url(collapse.gif) 0 -2px no-repeat;
+    width: 15px;
+    float:left;
+    cursor: pointer;
+}
+
+.SimpleEntertainmentTreeView div.AspNet-TreeView .AspNet-TreeView-Expand
+{
+    background: url(expand.gif) 0 -2px no-repeat;
+    width: 15px;
+    float:left;
+    cursor: pointer;
+}
+
+.SimpleEntertainmentTreeView .AspNet-TreeView-Selected
+{
+    background-color: #FAFAD2 !important;
+}
+
+.SimpleEntertainmentTreeView .AspNet-TreeView-ChildSelected
+{
+    background-color: #F5FFFA !important;
+}
+
+.SimpleEntertainmentTreeView .AspNet-TreeView-ParentSelected
+{
+    background-color: #FFE4E1 !important;
+}
+/*
+SimpleTreeView.css
+*/
+/*
+menuStyle.css
+*/
+.TopGroup
+{
+  
+  
+  border:solid 0px gray; 
+  cursor:default; 
+}
+
+.MenuGroup
+{
+  background-image:url(images/group_background.gif);
+  background-color:white;
+  border:solid 1px #7E7E81; 
+  cursor:default; 
+}
+
+.TopMenuItem
+{
+  background-color:#D9D9E6; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #D9D9E6; 
+  cursor:default; 
+  height:80px
+}
+
+.TopMenuItemHover 
+{
+  background-image:url(images/item_hover_bg.gif);
+  background-color:#E5E6EF; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #7C7C94; 
+  cursor:default; 
+}
+
+.TopMenuItemExpanded
+{
+  background-image:url(images/top_group_background.gif);
+  background-color:#E5E6EF; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #7C7C94; 
+  border-bottom-color:#BAB9CD; 
+  cursor:default; 
+}
+
+.MenuItem
+{
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  margin:1px; 
+  cursor:default; 
+}
+
+.MenuItem2
+{
+  height:80px;
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  margin:1px; 
+  cursor:default; 
+  background-image:url(images2/icon_L_02.png);
+}
+
+.MenuItemHover2
+{
+  background-image:url(images2/icon_L_02.png);
+  background-color:#FFEEC2; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #4B4B6F; 
+  cursor:default; 
+}
+
+.MenuItemHover 
+{
+  background-color:#FFEEC2; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #4B4B6F; 
+  cursor:default; 
+}
+
+.MenuBreak
+{
+  background-image:url(images/break_bg.gif);
+  width:100%;
+  height:1px;
+}
+/*
+menuStyle.css
+*/
+
+
+/*
+treeStyle.css
+*/
+
+.TreeViewHeader
+{  
+  background-color: #ECF3FD;
+  color: #9CCAFE; 
+  border-bottom: #A5BEDD 1px solid; 
+  font-family: tahoma; 
+  font-size: 11px;
+  font-weight: bold; 
+  padding:5px 0 5px 30px; 
+  cursor: default; 
+  margin:0px;
+  vertical-align:middle;
+  
+}
+
+
+.TreeView 
+{ 
+  background-color:White;
+  padding-top:4px; 
+  padding-left:1px; 
+  border: #7C7C94 0px solid; 
+  cursor:default; 
+  overflow:scroll;
+}
+
+.TreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+}
+
+.GrayedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  color:gray; 
+  cursor:default;
+}
+
+.HoverTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  text-decoration:underline; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.SelectedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: gray; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.NodeEdit 
+{
+  border:1px gray solid;
+  font-family: tahoma; 
+  font-size: 11px;
+}
+
+/*
+treeStyle.css
+*/
+ 
+ 
+ 
+ 
+/*
+dialog.css
+*/
+ 
+ 
+ 
+/*
+dialog.css
+*/
+ 

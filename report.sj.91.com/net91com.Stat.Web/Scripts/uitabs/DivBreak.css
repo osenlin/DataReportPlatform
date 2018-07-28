@@ -1,0 +1,26 @@
+﻿  #myHiddenDiv {
+    display: none;
+}
+.popup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #333333;
+    padding: 1px;
+}
+.popup-header {
+    background: url("bgr_popup_header.jpg") repeat-x scroll 0 0 transparent;
+    height: 24px;
+    padding: 7px;
+}
+.popup-header h2 {
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.popup-header .close-link {
+    float: right;
+    font-size: 11px;
+}
+.popup-body {
+    padding: 10px;
+}

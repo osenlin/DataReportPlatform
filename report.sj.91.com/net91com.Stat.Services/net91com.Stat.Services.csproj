@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26F0BE38-4451-44D3-A923-D253BC5EA7B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net91com.Stat.Services</RootNamespace>
+    <AssemblyName>net91com.Stat.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\00通用项目\Reference\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Core">
+      <HintPath>..\..\..\00通用项目\常用Dll\net91com.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\net91com.Stat.Web\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\JQueryDataTableData.cs" />
+    <Compile Include="Entity\Enum.cs" />
+    <Compile Include="Entity\OperationResult.cs" />
+    <Compile Include="Entity\SomeTempClass.cs" />
+    <Compile Include="sjqd\Entity\AppUninstallEntity.cs" />
+    <Compile Include="sjqd\Entity\Exception_StatCount.cs" />
+    <Compile Include="sjqd\Entity\ForecastSoftUser.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_LoginLog.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_OsVersions.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByOsVersion.cs" />
+    <Compile Include="sjqd\Entity\StatHourUser.cs" />
+    <Compile Include="sjqd\Sjqd_CpuService.cs" />
+    <Compile Include="sjqd\Sjqd_ResolutionService.cs" />
+    <Compile Include="sjqd\Sjqd_BrandService.cs" />
+    <Compile Include="sjqd\Sjqd_LoginLogService.cs" />
+    <Compile Include="sjqd\ExceptionService.cs" />
+    <Compile Include="sjqd\StatUsersByVersionService.cs" />
+    <Compile Include="Monitor\MsmqMonitorService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\Entity\Monitor_DataLogs.cs" />
+    <Compile Include="Monitor\Monitor_DataLogsServer.cs" />
+    <Compile Include="sjqd\Entity\ChannelCustomModel.cs" />
+    <Compile Include="sjqd\Entity\Down_UsersDownloadPosition.cs" />
+    <Compile Include="sjqd\Entity\Resolution.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_GJBB.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_Lan.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_MileStoneConfig.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_PhoneInfo.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_SBXH.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_SessionUserDemo.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByAge.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByInterval.cs" />
+    <Compile Include="sjqd\Entity\SoftUser.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_SoftVersions.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatChannelRetainedUsers.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatChannelUsers.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatLifecycle.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatRetainedUsers.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsers.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByGjbb.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByLan.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByMAC.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersByOneTime.cs" />
+    <Compile Include="sjqd\Entity\Sjqd_StatUsersBySbxh.cs" />
+    <Compile Include="sjqd\Entity\UserStatAll.cs" />
+    <Compile Include="sjqd\Entity\Version.cs" />
+    <Compile Include="sjqd\Sjqd_GJBBService.cs" />
+    <Compile Include="sjqd\Sjqd_LanService.cs" />
+    <Compile Include="sjqd\Sjqd_PhoneInfoService.cs" />
+    <Compile Include="sjqd\Sjqd_SBXHService.cs" />
+    <Compile Include="sjqd\Sjqd_SoftVersionsService.cs" />
+    <Compile Include="sjqd\Sjqd_StatUsersByChannelsService.cs" />
+    <Compile Include="sjqd\Sjqd_StatUsersByOneTimeService.cs" />
+    <Compile Include="sjqd\Sjqd_StatUsersService.cs" />
+    <Compile Include="sjqd\StatLifecycleService.cs" />
+    <Compile Include="sjqd\RetainedUsersService.cs" />
+    <Compile Include="sjqd\StatUsersByAgeService.cs" />
+    <Compile Include="sjqd\StatUsersByGjbbService.cs" />
+    <Compile Include="sjqd\StatUsersByIntervalService.cs" />
+    <Compile Include="sjqd\StatUsersByLanService.cs" />
+    <Compile Include="sjqd\StatUsersByMACService.cs" />
+    <Compile Include="sjqd\StatUsersBySbxhService.cs" />
+    <Compile Include="sjqd\ULSessionService.cs" />
+    <Compile Include="sjqd\TerminalService.cs" />
+    <Compile Include="sjqd\UsersService.cs" />
+    <Compile Include="Sjzj\Entity\GJBB.cs" />
+    <Compile Include="Sjzj\SjzsGJBBService.cs" />
+    <Compile Include="UtilityService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\00通用项目\net91com.Stat.Core\net91com.Stat.Core.csproj">
+      <Project>{15b4d9e7-b3d9-40d3-8c96-909a64ef363b}</Project>
+      <Name>net91com.Stat.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.UserRights\net91com.Reports.UserRights.csproj">
+      <Project>{1347A5E4-4C29-4168-A4C3-9B0A801BBB84}</Project>
+      <Name>net91com.Reports.UserRights</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{805CC577-2A3D-45C6-9D32-AD2B2EE91E57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net91com.Reports.DataAccess</RootNamespace>
+    <AssemblyName>net91com.Reports.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\00通用项目\Reference\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Core, Version=1.0.5337.25962, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\00通用项目\常用Dll\net91com.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.ResourceDataAccess">
+      <HintPath>..\net91com.Stat.Web\Assembly\Res91com.ResourceDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDataAccess.cs" />
+    <Compile Include="B_Basic\B_BaseTool_DataAccess.cs" />
+    <Compile Include="B_Basic\B_DownPosition_DataAccess.cs" />
+    <Compile Include="DataAccesssUtil\RelationDBDataSetUtil.cs" />
+    <Compile Include="D_DownloadStat\D_StatDownCount_DataAccess.cs" />
+    <Compile Include="D_DownloadStat\D_StatDownPositionDistribution_DataAccess.cs" />
+    <Compile Include="D_DownloadStat\D_StatDownRank_DataAccess.cs" />
+    <Compile Include="OtherDataAccess\Direct_Config_DataAccess.cs" />
+    <Compile Include="OtherDataAccess\EtlStates_DataAccess.cs" />
+    <Compile Include="OtherDataAccess\LinkAdStat_DataAccess.cs" />
+    <Compile Include="OtherDataAccess\LinkTagLog_DataAccess.cs" />
+    <Compile Include="OtherDataAccess\ToolDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SjqdUserStat\ChannelCustomUsers_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_Areas_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_StatMac2Imei_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\EtlStates_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\SjqdChannelCategories_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\SjqdChannelCustomers_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\SjqdChannelsFromClient_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\SjqdChannels_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_ISP_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_ProjectSource_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_SoftVersion_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_StatChannelRetainedUsers_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\Sjqd_StatUsersByISP_DataAccess.cs" />
+    <Compile Include="SjqdUserStat\StatUsers_DataAccess.cs" />
+    <Compile Include="Sjqd_NetModes_DataAccess.cs" />
+    <Compile Include="ToolDataStat\Tool_DataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\00通用项目\net91com.Stat.Core\net91com.Stat.Core.csproj">
+      <Project>{15b4d9e7-b3d9-40d3-8c96-909a64ef363b}</Project>
+      <Name>net91com.Stat.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.Entities\net91com.Reports.Entities.csproj">
+      <Project>{61A449CA-C8C1-42AE-9121-798B2B0D0F0F}</Project>
+      <Name>net91com.Reports.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.UserRights\net91com.Reports.UserRights.csproj">
+      <Project>{1347A5E4-4C29-4168-A4C3-9B0A801BBB84}</Project>
+      <Name>net91com.Reports.UserRights</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

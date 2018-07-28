@@ -1,0 +1,144 @@
+﻿  body
+        {
+            font-family: Verdana,Arial,Helvetica,sans-serif;
+        }
+        
+        .main
+        {
+            font-family: Arial;
+        }
+        .left
+        {
+            border: 1px solid #CCCCCC;
+            padding-top: 10px;
+            width: 45%;
+            display: inline-block;
+            margin-right: 3px;
+            float: left;
+            min-height: 500px;
+        }
+        .right
+        {
+            border: 1px solid #CCCCCC;
+            float: left;
+            width: 53%;
+            display: inline-block;
+            min-height: 510px;
+        }
+        .caozuo
+        {
+            display: inline-block;
+            cursor: pointer;
+            margin: 3px;
+        }
+        .popup-body td
+        {
+            width: 50%;
+        }
+        .btnclass
+        {
+            border-right: #7b9ebd 1px solid;
+            padding-right: 2px;
+            border-top: #7b9ebd 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            border-left: #7b9ebd 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #7b9ebd 1px solid;
+            background-color: #E6EEEE;
+        }
+        .txtboxclass
+        {
+            border: 1px solid #C4C2C2;
+        }
+        .lean_overlay
+        {
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            display: none;
+        }
+        .OpenWindow
+        {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+            display: none;
+            padding-bottom: 2px;
+            width: 360px;
+            z-index: 11000;
+            left: 50%;
+            margin-left: -202px;
+            opacity: 1;
+            position: fixed;
+            top: 200px;
+        }
+        .OpenWindow-header
+        {
+            background: url("/Images/hd-bg.png") repeat scroll 0 0 transparent;
+            border-bottom: 1px solid #CCCCCC;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 7px 18px 7px;
+        }
+        .modal_close
+        {
+            background: url("/Images/modal_close.png") repeat scroll 0 0 transparent;
+            display: block;
+            height: 14px;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            width: 14px;
+            z-index: 2;
+        }
+        .OpenWindow .txt-fld
+        {
+            font-size: 12px;
+            border-bottom: 1px solid #EEEEEE;
+            padding: 2px 15px;
+            position: relative;
+            text-align: right;
+            width: 330px;
+        }
+        .OpenWindow .txt-fld input
+        {
+            background: none repeat scroll 0 0 #F7F7F7;
+            border-color: #CCCCCC #E7E6E6 #E7E6E6 #CCCCCC;
+            border-radius: 4px 4px 4px 4px;
+            border-style: solid;
+            border-width: 1px;
+            color: #222222;
+            font-family: "Helvetica Neue";
+            outline: medium none;
+            padding: 2px;
+            width: 220px;
+        }
+        .OpenWindow .btn-fld
+        {
+            overflow: hidden;
+            padding: 3px 20px 3px 100px;
+            width: 254px;
+        }
+        .mybtnhand
+        {
+            cursor: pointer;
+            background: none repeat scroll 0 0 #87CEFA;
+            border: medium none;
+            border-radius: 4px 4px 4px 4px;
+            color: #FFFFFF;
+            float: right;
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            overflow: visible;
+            padding: 4px 6px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            width: auto;
+        }

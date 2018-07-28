@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ChannelAttributes id="0" name="" type="0">
+
+ 
+    <ChannelAttribute id="1" name="在线" type="1">
+      <ChannelAttribute id="1" name="联盟" type="2">
+
+        <ChannelAttribute id="1" name="广告联盟" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="2" name="广告平台" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="2" name="网站"  type="2">
+
+        <ChannelAttribute id="3" name="网站" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="3" name="应用市场" type="2">
+
+        <ChannelAttribute id="4" name="线上市场" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="4" name="产品线换量" type="2">
+
+        <ChannelAttribute id="5" name="产品线换量" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="5" name="第三方应用" type="2">
+
+        <ChannelAttribute id="6" name="第三方应用" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+    </ChannelAttribute>
+
+    <ChannelAttribute id="2" name="产品运营" type="1">
+      <ChannelAttribute id="6" name="活动" type="2">
+
+        <ChannelAttribute id="7" name="内部活动" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="8" name="外部活动" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="7" name="换量" type="2">
+ 
+        <ChannelAttribute id="9" name="内部换量" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="10" name="外部换量"  type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="8" name="凤巢"  type="2">
+
+        <ChannelAttribute id="11" name="PC凤巢"  type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="12" name="无限凤巢" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="9" name="官网" type="2">
+
+        <ChannelAttribute id="13" name="PC官网" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="14" name="wap官网" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+    </ChannelAttribute>
+  
+    <ChannelAttribute id="3" name="厂商" type="1">
+      <ChannelAttribute id="10" name="方案商" type="2">
+
+        <ChannelAttribute id="15" name="方案商" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="11" name="刷机卖场"  type="2">
+        <ChannelAttribute id="16" name="刷机卖场"  type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="12" name="生产厂商"  type="2">
+
+        <ChannelAttribute id="17" name="生产厂商" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="13" name="预装在线渠道" type="2">
+
+        <ChannelAttribute id="18" name="预装在线渠道" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+    </ChannelAttribute>
+
+    <ChannelAttribute id="4" name="运营商" type="1">
+      <ChannelAttribute id="14" name="线上渠道"  type="2">
+        <ChannelAttribute id="19" name="线上推广"  type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="20" name="运营商商店" type="3">
+        </ChannelAttribute>
+      </ChannelAttribute>
+      <ChannelAttribute id="15" name="营业厅预装" type="2">
+        <ChannelAttribute id="21" name="营业厅刷机" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="22" name="营业厅下载" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="16" name="运营商公司" type="2">
+
+        <ChannelAttribute id="23" name="集团公司" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="24" name="省公司" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="25" name="终端公司" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="17" name="定制合作" type="2">
+
+        <ChannelAttribute id="26" name="厂商定制" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="27" name="芯片" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="28" name="其他手持设备" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="18" name="其他" type="2">
+
+        <ChannelAttribute id="29" name="备注分类" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+    </ChannelAttribute>
+ 
+    <ChannelAttribute id="6" name="搜索联盟" type="1">
+      
+      <ChannelAttribute id="20" name="搜索-浏览器内置" type="2">
+          <ChannelAttribute id="31" name="搜索-浏览器内置" type="3">
+          </ChannelAttribute>
+        
+      </ChannelAttribute>
+      <ChannelAttribute id="21" name="搜索-联盟" type="2">
+          <ChannelAttribute id="32" name="搜索-广告联盟" type="3">
+          </ChannelAttribute>
+          <ChannelAttribute id="33" name="搜索-广告平台" type="3">
+          </ChannelAttribute> 
+      </ChannelAttribute>
+      <ChannelAttribute id="22" name="搜索-网站" type="2">
+          <ChannelAttribute id="34" name="搜索-网站" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="35" name="搜索-线上其他" type="3">
+        </ChannelAttribute>
+      </ChannelAttribute>
+      <ChannelAttribute id="23" name="搜索-应用市场" type="2">
+
+        <ChannelAttribute id="36" name="搜索-运营商商店" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="37" name="搜索-线上市场" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="38" name="搜索-厂商商店" type="3">
+        </ChannelAttribute>
+        
+      </ChannelAttribute>
+      <ChannelAttribute id="24" name="搜索-第三方应用" type="2">
+        
+        <ChannelAttribute id="39" name="搜索-第三方应用" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="25" name="搜索-方案商" type="2">
+
+        <ChannelAttribute id="40" name="搜索-芯片商" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="41" name="搜索-Design House" type="3">
+        </ChannelAttribute> 
+        
+      </ChannelAttribute>
+      <ChannelAttribute id="26" name="搜索-刷机卖场" type="2">
+        
+        <ChannelAttribute id="42" name="搜索-营业厅刷机" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="43" name="搜索-国包商" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="44" name="搜索-卖场" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="45" name="搜索-ROM 刷机" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="46" name="搜索-ROM FREE" type="3">
+        </ChannelAttribute> 
+
+      </ChannelAttribute>
+      <ChannelAttribute id="27" name="搜索-生产厂商" type="2">
+
+        <ChannelAttribute id="47" name="搜索-手机厂商" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="48" name="搜索-电视机顶盒" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="49" name="搜索-PAD厂商" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="50" name="搜索-其他设备厂商" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="51" name="搜索-生产厂商其他(临时)" type="3">
+        </ChannelAttribute>
+
+      </ChannelAttribute>
+      <ChannelAttribute id="28" name="搜索-运营商" type="2">
+        
+        <ChannelAttribute id="52" name="搜索-集团公司" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="53" name="搜索-运营商其他" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="54" name="搜索-终端公司" type="3">
+        </ChannelAttribute>
+        <ChannelAttribute id="55" name="搜索-省公司" type="3">
+        </ChannelAttribute> 
+
+     </ChannelAttribute> 
+       
+    </ChannelAttribute>
+
+</ChannelAttributes>

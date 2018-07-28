@@ -1,0 +1,1628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19E0771A-358F-4DD8-B738-B694C8746274}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net91com.Stat.Web</RootNamespace>
+    <AssemblyName>net91com.Stat.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>Assembly\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net, Version=1.2.0.29318, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assembly\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=1.1.0.29316, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assembly\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="KinnSoft.Excel.OfficeOpenXml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assembly\KinnSoft.Excel.OfficeOpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Common">
+      <HintPath>Assembly\net91com.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Core, Version=1.0.5304.31821, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assembly\net91com.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.ResourceDataAccess">
+      <HintPath>Assembly\Res91com.ResourceDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.SoftModel">
+      <HintPath>Assembly\Res91com.SoftModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.htm" />
+    <Content Include="Admin\CPUManage.aspx" />
+    <Content Include="Admin\ResolutionManage.aspx" />
+    <Content Include="Admin\GJBBManage.aspx" />
+    <Content Include="Admin\BrandManage.aspx" />
+    <Content Include="Admin\LanguageManage.aspx" />
+    <Content Include="DataTables\StatRetainedUsers.xml" />
+    <Content Include="DataTables\StatUsers.xml" />
+    <Content Include="Images\404.jpg" />
+    <Content Include="Images\arrow_left.gif" />
+    <Content Include="Images\arrow_right.gif" />
+    <Content Include="Images\asc.gif" />
+    <Content Include="Images\back_disabled.png" />
+    <Content Include="Images\back_enabled.png" />
+    <Content Include="Images\back_enabled_hover.png" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\bg_sub_title.jpg" />
+    <Content Include="Images\bg_tablehead.JPG" />
+    <Content Include="Images\bg_title.jpg" />
+    <Content Include="Images\blue.png" />
+    <Content Include="Images\buttonsFixed.png" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\contentBarDownArrow.gif" />
+    <Content Include="Images\controls.png" />
+    <Content Include="Images\csv.gif" />
+    <Content Include="Images\defaultloading.gif" />
+    <Content Include="Images\desc.gif" />
+    <Content Include="Images\downdivbg.jpg" />
+    <Content Include="Images\downloadexcel.gif" />
+    <Content Include="Images\dt-arrow-dn.png" />
+    <Content Include="Images\dt-arrow-up.png" />
+    <Content Include="Images\error.gif" />
+    <Content Include="Images\forward_disabled.png" />
+    <Content Include="Images\forward_enabled.png" />
+    <Content Include="Images\forward_enabled_hover.png" />
+    <Content Include="Images\hd-bg.png" />
+    <Content Include="Images\help.gif" />
+    <Content Include="Images\indexhead.jpg" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\modal_close.png" />
+    <Content Include="Images\PlatLogo\android.jpg" />
+    <Content Include="Images\PlatLogo\iphone.jpg" />
+    <Content Include="Images\PlatLogo\m8.jpg" />
+    <Content Include="Images\PlatLogo\oms.jpg" />
+    <Content Include="Images\PlatLogo\pc.png" />
+    <Content Include="Images\PlatLogo\symbian.jpg" />
+    <Content Include="Images\PlatLogo\webgame.jpg" />
+    <Content Include="Images\PlatLogo\win8.png" />
+    <Content Include="Images\PlatLogo\wm.jpg" />
+    <Content Include="Images\PlatLogo\WP7.jpg" />
+    <Content Include="Images\printout.gif" />
+    <Content Include="Images\printout.png" />
+    <Content Include="Images\selectdown.jpg" />
+    <Content Include="Images\sort_asc.png" />
+    <Content Include="Images\sort_asc_disabled.png" />
+    <Content Include="Images\sort_both.png" />
+    <Content Include="Images\sort_desc.png" />
+    <Content Include="Images\sort_desc_disabled.png" />
+    <Content Include="Images\sun.png" />
+    <Content Include="Images\thbg.gif" />
+    <Content Include="Images\title_center.jpg" />
+    <Content Include="Images\title_left.jpg" />
+    <Content Include="Images\title_right.jpg" />
+    <Content Include="Images\TreeLineImages\dash.gif" />
+    <Content Include="Images\TreeLineImages\dashminus.gif" />
+    <Content Include="Images\TreeLineImages\dashplus.gif" />
+    <Content Include="Images\TreeLineImages\i.gif" />
+    <Content Include="Images\TreeLineImages\l.gif" />
+    <Content Include="Images\TreeLineImages\lminus.gif" />
+    <Content Include="Images\TreeLineImages\lplus.gif" />
+    <Content Include="Images\TreeLineImages\minus.gif" />
+    <Content Include="Images\TreeLineImages\noexpand.gif" />
+    <Content Include="Images\TreeLineImages\plus.gif" />
+    <Content Include="Images\TreeLineImages\r.gif" />
+    <Content Include="Images\TreeLineImages\rminus.gif" />
+    <Content Include="Images\TreeLineImages\rplus.gif" />
+    <Content Include="Images\TreeLineImages\t.gif" />
+    <Content Include="Images\TreeLineImages\tminus.gif" />
+    <Content Include="Images\TreeLineImages\tplus.gif" />
+    <Content Include="Images\TreePanel\checkbox_0.gif" />
+    <Content Include="Images\TreePanel\checkbox_1.gif" />
+    <Content Include="Images\TreePanel\checkbox_2.gif" />
+    <Content Include="Images\TreePanel\empty.gif" />
+    <Content Include="Images\TreePanel\join.gif" />
+    <Content Include="Images\TreePanel\joinbottom.gif" />
+    <Content Include="Images\TreePanel\line.gif" />
+    <Content Include="Images\TreePanel\minus.gif" />
+    <Content Include="Images\TreePanel\minusbottom.gif" />
+    <Content Include="Images\TreePanel\nolines_minus.gif" />
+    <Content Include="Images\TreePanel\nolines_plus.gif" />
+    <Content Include="Images\TreePanel\plus.gif" />
+    <Content Include="Images\TreePanel\plusbottom.gif" />
+    <Content Include="Images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Images\version_1\1.jpg" />
+    <Content Include="Images\version_1\2.jpg" />
+    <Content Include="Images\version_1\3.jpg" />
+    <Content Include="Images\version_1\4.jpg" />
+    <Content Include="Images\version_1\5.jpg" />
+    <Content Include="Images\version_1\6.jpg" />
+    <Content Include="Images\version_1\ad.gif" />
+    <Content Include="Images\version_1\arrow_down.png" />
+    <Content Include="Images\version_1\arrow_up.png" />
+    <Content Include="Images\version_1\bg.jpg" />
+    <Content Include="Images\version_1\btn1.gif" />
+    <Content Include="Images\version_1\btn2.jpg" />
+    <Content Include="Images\version_1\btn3.jpg" />
+    <Content Include="Images\version_1\btn4.jpg" />
+    <Content Include="Images\version_1\del.gif" />
+    <Content Include="Images\version_1\download.png" />
+    <Content Include="Images\version_1\forsearch.gif" />
+    <Content Include="Images\version_1\hide.png" />
+    <Content Include="Images\version_1\image.gif" />
+    <Content Include="Images\version_1\lcol_bg.gif" />
+    <Content Include="Images\version_1\link.gif" />
+    <Content Include="Images\version_1\look.gif" />
+    <Content Include="Images\version_1\main_bg.gif" />
+    <Content Include="Images\version_1\main_bg.jpg" />
+    <Content Include="Images\version_1\main_btm.jpg" />
+    <Content Include="Images\version_1\main_top.gif" />
+    <Content Include="Images\version_1\music.gif" />
+    <Content Include="Images\version_1\nopass.gif" />
+    <Content Include="Images\version_1\pass.gif" />
+    <Content Include="Images\version_1\prev.jpg" />
+    <Content Include="Images\version_1\preview.gif" />
+    <Content Include="Images\version_1\recommend.png" />
+    <Content Include="Images\version_1\show.png" />
+    <Content Include="Images\version_1\split1.jpg" />
+    <Content Include="Images\version_1\submitcheck.png" />
+    <Content Include="Images\version_1\t1.jpg" />
+    <Content Include="Images\version_1\t2.gif" />
+    <Content Include="Images\version_1\tab1.jpg" />
+    <Content Include="Images\version_1\tab2.jpg" />
+    <Content Include="Images\version_1\topcarriage.png" />
+    <Content Include="Images\version_1\topinfo.jpg" />
+    <Content Include="Images\version_1\undercarriage.png" />
+    <Content Include="Images\version_1\withdrawcheck.png" />
+    <Content Include="Images\version_1\withdrawrecommend.png" />
+    <Content Include="Images\zd1.png" />
+    <Content Include="Images\zd2.png" />
+    <Content Include="Reports\Controls\ChanelForAll.ascx" />
+    <Content Include="Reports\Controls\HeadAdminControl.ascx" />
+    <Content Include="Reports\Controls\HeadAllControl.ascx" />
+    <Content Include="Reports\Controls\HeadAllControlChannel.ascx" />
+    <Content Include="Reports\Controls\HeadDownControl.ascx" />
+    <Content Include="Reports\Controls\HeadDownSpeedControl.ascx" />
+    <Content Include="Reports\Controls\HeadDownTop100.ascx" />
+    <Content Include="Reports\Controls\HeadLinkTagControl.ascx" />
+    <Content Include="Reports\Controls\LinkTagForAll.ascx" />
+    <Content Include="Reports\Controls\LoadingControl.ascx" />
+    <Content Include="Reports\Controls\PeriodSelector.ascx" />
+    <Content Include="Reports\Controls\PositionTag.ascx" />
+    <Content Include="Reports\GetMore.aspx" />
+    <Content Include="Reports\LifecycleReport.aspx" />
+    <Content Include="Reports\LinkReport.aspx" />
+    <Content Include="Reports\sjqd\AllCustomStat.aspx" />
+    <Content Include="Reports\SoftVersionSjqd.aspx" />
+    <Content Include="Reports\StatUsersByArea.aspx" />
+    <Content Include="Reports\StatUsersByAreaTransverse.aspx" />
+    <Content Include="Reports\StatUsersByVersion.aspx" />
+    <Content Include="Reports\StatRetainedUsersByVersion.aspx" />
+    <Content Include="Reports\StatRetainedUsersByArea.aspx" />
+    <Content Include="Reports\StatRetainedUsers.aspx" />
+    <Content Include="Reports\RankOfChannels.aspx" />
+    <Content Include="Reports\StatUsersByVersionTransverse.aspx" />
+    <Content Include="Reports\StatUsersByCountryByVersion.aspx" />
+    <Content Include="Reports\StatRetainedActiveUsers.aspx" />
+    <Content Include="Reports\StatRetainedActiveUsersByArea.aspx" />
+    <Content Include="Admin\SBXHManage.aspx" />
+    <Content Include="Admin\SoftVersionManage.aspx" />
+    <Content Include="CacheManager.aspx" />
+    <Content Include="Reports\helphtm\top20Area.htm" />
+    <Content Include="Reports\sjqd\AnalysisForChannelV2En.aspx" />
+    <Content Include="Reports\Top20Areas.aspx" />
+    <Content Include="Reports_New\css\jquery-ui.css" />
+    <Content Include="Reports_New\css\jquery.multiselect.css" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCount.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByArea.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByChannelType.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByVersion.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResID.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResIDDetail.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadCateSumBySoft.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistribution.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTag.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTagDetail.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionDetail.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea_Identifier.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByAuthorID.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass_Identifier.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft_Identifier.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByAreaDistributionl.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByChannel.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownloadSumByExtendAttr.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumBySoft.aspx" />
+    <Content Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByVersionDistributionl.aspx" />
+    <Content Include="Reports_New\js\channelControl.js" />
+    <Content Include="Reports_New\js\selectcontrols.js" />
+    <Content Include="Reports_New\otherfile\ChannelConfig.xml" />
+    <Content Include="Reports_New\otherfile\CooperateConfig.xml" />
+    <Content Include="Reports_New\RetainUsersByCate.aspx" />
+    <Content Include="Reports_New\R_Manage\B_DownPositionManage.aspx" />
+    <Content Include="Reports_New\R_Other\LinkAdStat.aspx" />
+    <Content Include="Reports_New\R_Other\LinkTagManager.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomerManager.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe1.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe2.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe3.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomRetainUsers_Out.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\ISPUsersAnalysis.aspx" />
+    <Content Include="Reports_New\R_UserAnalysis\RetainUsersForExternalChannels.aspx" />
+    <Content Include="Tools\EditEtlState.aspx" />
+    <Content Include="Tools\EtlStateManage.aspx" />
+    <Content Include="Tools\Service.aspx" />
+    <Content Include="UserRights\ChannelRightDetail.aspx" />
+    <Content Include="UserRights\ChannelRightManager.aspx" />
+    <Content Include="UserRights\EditSystem.aspx" />
+    <Content Include="UserRights\RightSysDescript.aspx" />
+    <Content Include="UserRights\SystemManage.aspx" />
+    <Content Include="UserRights\RoleSoftRightManage.aspx" />
+    <Content Include="css\colorbox.css" />
+    <Content Include="css\ControlsStyle.css" />
+    <Content Include="css\general.css" />
+    <Content Include="css\headcss\head.css" />
+    <Content Include="css\headcss\jquery-ui.css" />
+    <Content Include="css\headcss\jquery.multiselect.css" />
+    <Content Include="css\headcss\jquery.multiselect.filter.css" />
+    <Content Include="css\headcss\style.css" />
+    <Content Include="css\help.css" />
+    <Content Include="css\jquery.dataTables.css" />
+    <Content Include="css\jquery.loadmask.css" />
+    <Content Include="css\manage.css" />
+    <Content Include="css\printScreen.css" />
+    <Content Include="css\ReportCss.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="css\tabs.css" />
+    <Content Include="css\TreePanel.css" />
+    <Content Include="css\TreeTable\allbgs.png" />
+    <Content Include="css\TreeTable\jquery.treeTable.css" />
+    <Content Include="css\TreeView\images\folder.gif" />
+    <Content Include="css\TreeView\images\folders.gif" />
+    <Content Include="css\TreeView\images\Lines\dash.gif" />
+    <Content Include="css\TreeView\images\Lines\dashminus.gif" />
+    <Content Include="css\TreeView\images\Lines\dashplus.gif" />
+    <Content Include="css\TreeView\images\Lines\i.gif" />
+    <Content Include="css\TreeView\images\Lines\l.gif" />
+    <Content Include="css\TreeView\images\Lines\lminus.gif" />
+    <Content Include="css\TreeView\images\Lines\lplus.gif" />
+    <Content Include="css\TreeView\images\Lines\minus.gif" />
+    <Content Include="css\TreeView\images\Lines\noexpand.gif" />
+    <Content Include="css\TreeView\images\Lines\plus.gif" />
+    <Content Include="css\TreeView\images\Lines\r.gif" />
+    <Content Include="css\TreeView\images\Lines\rminus.gif" />
+    <Content Include="css\TreeView\images\Lines\rplus.gif" />
+    <Content Include="css\TreeView\images\Lines\t.gif" />
+    <Content Include="css\TreeView\images\Lines\tminus.gif" />
+    <Content Include="css\TreeView\images\Lines\tplus.gif" />
+    <Content Include="css\TreeView\treeStyle.css" />
+    <Content Include="css\ui.datepicker.css" />
+    <Content Include="css\version_1.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Reports\helphtm\projectdowncount.htm" />
+    <Content Include="Reports\LostUserReport.aspx" />
+    <Content Include="Reports\ReportStat.aspx" />
+    <Content Include="Reports\ActivityUserReport.aspx" />
+    <Content Include="Reports\NewUserReport.aspx" />
+    <Content Include="Reports\sjqd\LoginLogByIMEI.aspx" />
+    <Content Include="LogList.aspx" />
+    <Content Include="Monitor\Controls\DataLogControl.ascx" />
+    <Content Include="Monitor\LogDataTransverse.aspx" />
+    <Content Include="Monitor\MsmqMonitor.aspx" />
+    <Content Include="Monitor\ServiceLogDateReport.aspx" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="Reports\helphtm\activity.htm" />
+    <Content Include="Reports\helphtm\default1Explain.htm" />
+    <Content Include="Reports\helphtm\default2Explain.htm" />
+    <Content Include="Reports\helphtm\Resolution.htm" />
+    <Content Include="Reports\helphtm\sessionlength.htm" />
+    <Content Include="Reports\helphtm\softfrequency.htm" />
+    <Content Include="Reports\helphtm\softGJBBExplain.htm" />
+    <Content Include="Reports\sjqd\AnalysisForChannelV2.aspx" />
+    <Content Include="Reports\Default.aspx" />
+    <Content Include="Reports\DeveloperIndex.aspx" />
+    <Content Include="Error.html" />
+    <Content Include="Reports\helphtm\explain.htm" />
+    <Content Include="Reports\helphtm\newuserexplain.htm" />
+    <Content Include="Reports\helphtm\retaineduserexplain.htm" />
+    <Content Include="Reports\helphtm\SoftFrequencyExplain.htm" />
+    <Content Include="Reports\helphtm\SoftVersionUserExplain.htm" />
+    <Content Include="Reports\helphtm\top20sjqd.htm" />
+    <Content Include="Reports\NoRight.aspx" />
+    <Content Include="Reports\StatUserAges.aspx" />
+    <Content Include="Reports\StatUserInterval.aspx" />
+    <Content Include="Reports\TransverseReports\ResolutionReport.aspx" />
+    <Content Include="Reports\TransverseReports\SoftBrandTransverse.aspx" />
+    <Content Include="Reports\TransverseReports\SoftGJBBTransverse.aspx" />
+    <Content Include="Reports\TransverseReports\SoftLanTransverse.aspx" />
+    <Content Include="Reports\TransverseReports\SoftXhTransverse.aspx" />
+    <Content Include="Reports_New\css\calendar.css" />
+    <Content Include="Reports_New\css\chosen.css" />
+    <Content Include="Reports_New\css\colorbox.css" />
+    <Content Include="Reports_New\css\defindecontrol.css" />
+    <Content Include="Reports_New\css\intelligencesearch.css" />
+    <Content Include="Reports_New\css\jquery.bt.css" />
+    <Content Include="Reports_New\css\jquery.datatables.jui.css" />
+    <Content Include="Reports_New\css\jquery.datatables.page.css" />
+    <Content Include="Reports_New\css\jquery.datatables.table.css" />
+    <Content Include="Reports_New\css\site.css" />
+    <Content Include="Reports_New\images\calendar\close.gif" />
+    <Content Include="Reports_New\images\calendar\close_over.gif" />
+    <Content Include="Reports_New\images\calendar\down.gif" />
+    <Content Include="Reports_New\images\calendar\down_over.gif" />
+    <Content Include="Reports_New\images\calendar\down_time.gif" />
+    <Content Include="Reports_New\images\calendar\down_time_over.gif" />
+    <Content Include="Reports_New\images\calendar\left.gif" />
+    <Content Include="Reports_New\images\calendar\left_over.gif" />
+    <Content Include="Reports_New\images\calendar\right.gif" />
+    <Content Include="Reports_New\images\calendar\right_over.gif" />
+    <Content Include="Reports_New\images\colorbox\border.png" />
+    <Content Include="Reports_New\images\colorbox\controls.png" />
+    <Content Include="Reports_New\images\colorbox\loading.gif" />
+    <Content Include="Reports_New\images\colorbox\loading_background.png" />
+    <Content Include="Reports_New\images\common\add.png" />
+    <Content Include="Reports_New\images\common\bottun_left.png" />
+    <Content Include="Reports_New\images\common\bottun_left_hover.png" />
+    <Content Include="Reports_New\images\common\bottun_right.png" />
+    <Content Include="Reports_New\images\common\bottun_right_hover.png" />
+    <Content Include="Reports_New\images\common\chosen-sprite%402x.png" />
+    <Content Include="Reports_New\images\common\chosen-sprite.png" />
+    <Content Include="Reports_New\images\common\defaultloading.gif" />
+    <Content Include="Reports_New\images\common\function.jpg" />
+    <Content Include="Reports_New\images\common\thbg.gif" />
+    <Content Include="Reports_New\images\common\title_center.jpg" />
+    <Content Include="Reports_New\images\common\title_left.jpg" />
+    <Content Include="Reports_New\images\common\title_right.jpg" />
+    <Content Include="Reports_New\images\selecttabs\bottun_center.gif" />
+    <Content Include="Reports_New\images\selecttabs\bottun_center_left_hover.gif" />
+    <Content Include="Reports_New\images\selecttabs\bottun_left.png" />
+    <Content Include="Reports_New\images\selecttabs\bottun_left_hover.png" />
+    <Content Include="Reports_New\images\selecttabs\bottun_right.png" />
+    <Content Include="Reports_New\images\selecttabs\bottun_right_hover.png" />
+    <Content Include="Reports_New\js\calendar.js" />
+    <Content Include="Reports_New\js\canvasXpress.min.js" />
+    <Content Include="Reports_New\js\chartjs.js" />
+    <Content Include="Reports_New\js\chosen.jquery.min.js" />
+    <Content Include="Reports_New\js\chosen.proto.min.js" />
+    <Content Include="Reports_New\js\Defindecontrol.js" />
+    <Content Include="Reports_New\js\de_DE.txt" />
+    <Content Include="Reports_New\js\excanvas.js" />
+    <Content Include="Reports_New\js\highcharts-more.js" />
+    <Content Include="Reports_New\js\highcharts.js" />
+    <Content Include="Reports_New\js\highcharts_old.js" />
+    <Content Include="Reports_New\js\intelligencesearch.js" />
+    <Content Include="Reports_New\js\jquery-1.6.4.min.js" />
+    <Content Include="Reports_New\js\jquery.bt.min.js" />
+    <Content Include="Reports_New\js\jquery.colorbox-min.js" />
+    <Content Include="Reports_New\js\jquery.dataTables.min.js" />
+    <Content Include="Reports_New\js\jquery.form.js" />
+    <Content Include="Reports_New\js\jquery.jselect.js" />
+    <Content Include="Reports_New\js\jquery.json-2.3.min.js" />
+    <Content Include="Reports_New\js\jquery.query-2.1.7.js" />
+    <Content Include="Reports_New\js\jquery.validate.min.js" />
+    <Content Include="Reports_New\js\My97DatePicker\calendar.js" />
+    <Content Include="Reports_New\js\My97DatePicker\lang\en.js" />
+    <Content Include="Reports_New\js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Reports_New\js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Reports_New\js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Reports_New\js\My97DatePicker\WdatePicker.js" />
+    <Content Include="Reports_New\NoRight.aspx" />
+    <Content Include="Reports_New\otherfile\topictile.xml" />
+    <Content Include="Reports_New\R_UserAnalysis\ChannelCustomUsers.aspx" />
+    <Content Include="Scripts\adapters\mootools-adapter.js" />
+    <Content Include="Scripts\adapters\mootools-adapter.src.js" />
+    <Content Include="Scripts\adapters\prototype-adapter.js" />
+    <Content Include="Scripts\adapters\prototype-adapter.src.js" />
+    <Content Include="Scripts\charttheme.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\de_DE.txt" />
+    <Content Include="Scripts\excanvas.min.js" />
+    <Content Include="Scripts\exporting.js" />
+    <Content Include="Scripts\Ext\ext-all-embedded-css.css" />
+    <Content Include="Scripts\Ext\ext-all-js.js" />
+    <Content Include="Scripts\Ext\ext-base-js.js" />
+    <Content Include="Scripts\Ext\ext-lang-zh-CN-js.js" />
+    <Content Include="Scripts\Ext\extnet-core-js.js" />
+    <Content Include="Scripts\Ext\tab-scroller-menu-embedded-css.css" />
+    <Content Include="Scripts\Ext\tabclosemenu-js.js" />
+    <Content Include="Scripts\Ext\TabScrollerMenu-js.js" />
+    <Content Include="Scripts\HeadScript\jquery-ui.min.js" />
+    <Content Include="Scripts\HeadScript\jquery.js" />
+    <Content Include="Scripts\HeadScript\jquery.multiselect.filter.js" />
+    <Content Include="Scripts\HeadScript\jquery.multiselect.js" />
+    <Content Include="Scripts\highcharts.js" />
+    <Content Include="Scripts\jq.date.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.5.2.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.colorbox-min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.jselect.js" />
+    <Content Include="Scripts\jquery.json-2.3.min.js" />
+    <Content Include="Scripts\jquery.leanModal.min.js" />
+    <Content Include="Scripts\jquery.loadmask.min.js" />
+    <Content Include="Scripts\jquery.query-2.1.7.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\jquery.tools.min.js" />
+    <Content Include="Scripts\jquery.treeTable.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jtip.js" />
+    <Content Include="Scripts\MenuConfigs.txt" />
+    <Content Include="Scripts\modules\canvas-tools.js" />
+    <Content Include="Scripts\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\modules\exporting.js" />
+    <Content Include="Scripts\modules\exporting.src.js" />
+    <Content Include="Scripts\report_line.js" />
+    <Content Include="Scripts\report_per.js" />
+    <Content Include="Scripts\report_per_fenbu.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery-ui.custom.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery-ui.custom.min.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery.cookie.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery.dynatree.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery.js" />
+    <Content Include="Scripts\sjqdtree\jquery\jquery.min.js" />
+    <Content Include="Scripts\sjqdtree\jquery\README.txt" />
+    <Content Include="Scripts\sjqdtree\skin\icons.gif" />
+    <Content Include="Scripts\sjqdtree\skin\loading.gif" />
+    <Content Include="Scripts\sjqdtree\skin\ui.dynatree.css" />
+    <Content Include="Scripts\sjqdtree\skin\vline.gif" />
+    <Content Include="Scripts\themes\dark-blue.js" />
+    <Content Include="Scripts\themes\dark-green.js" />
+    <Content Include="Scripts\themes\gray.js" />
+    <Content Include="Scripts\themes\grid.js" />
+    <Content Include="Scripts\themes\skies.js" />
+    <Content Include="Scripts\treeTable2\css\mydefinedtreetable.css" />
+    <Content Include="Scripts\treeTable2\images\bg-table-thead.png" />
+    <Content Include="Scripts\treeTable2\images\collapse-light.png" />
+    <Content Include="Scripts\treeTable2\images\collapse.png" />
+    <Content Include="Scripts\treeTable2\images\expand-light.png" />
+    <Content Include="Scripts\treeTable2\images\expand.png" />
+    <Content Include="Scripts\treeTable2\images\file.png" />
+    <Content Include="Scripts\treeTable2\images\folder.png" />
+    <Content Include="Scripts\treeTable2\css\jquery.treetable.css" />
+    <Content Include="Scripts\treeTable2\jquery.treetable.js" />
+    <Content Include="Scripts\treeTable2\css\jquery.treetable.theme.default.css" />
+    <Content Include="Scripts\uitabs\bgr_popup_header.jpg" />
+    <Content Include="Scripts\uitabs\close.gif" />
+    <Content Include="Scripts\uitabs\close.png" />
+    <Content Include="Scripts\uitabs\close_highlight.png" />
+    <Content Include="Scripts\uitabs\close_hover2.png" />
+    <Content Include="Scripts\uitabs\DivBreak.css" />
+    <Content Include="Scripts\uitabs\jquery-1.2.1.pack.js" />
+    <Content Include="Scripts\uitabs\jquery.jmpopups-0.5.1.js" />
+    <Content Include="Scripts\uitabs\tab.png" />
+    <Content Include="Scripts\uitabs\ui.tabs.css" />
+    <Content Include="Scripts\uitabs\ui.tabs.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Scripts\zTree\css\img\diy\1_close.png" />
+    <Content Include="Scripts\zTree\css\img\diy\1_open.png" />
+    <Content Include="Scripts\zTree\css\img\diy\2.png" />
+    <Content Include="Scripts\zTree\css\img\diy\3.png" />
+    <Content Include="Scripts\zTree\css\img\diy\4.png" />
+    <Content Include="Scripts\zTree\css\img\diy\5.png" />
+    <Content Include="Scripts\zTree\css\img\diy\6.png" />
+    <Content Include="Scripts\zTree\css\img\diy\7.png" />
+    <Content Include="Scripts\zTree\css\img\diy\8.png" />
+    <Content Include="Scripts\zTree\css\img\diy\9.png" />
+    <Content Include="Scripts\zTree\css\img\line_conn.gif" />
+    <Content Include="Scripts\zTree\css\img\loading.gif" />
+    <Content Include="Scripts\zTree\css\img\zTreeStandard.gif" />
+    <Content Include="Scripts\zTree\css\img\zTreeStandard.png" />
+    <Content Include="Scripts\zTree\css\zTreeStyle.css" />
+    <Content Include="Scripts\zTree\js\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\zTree\js\jquery.ztree.all-3.2.min.js" />
+    <Content Include="Scripts\zTree\js\jquery.ztree.core-3.2.min.js" />
+    <Content Include="Scripts\zTree\js\jquery.ztree.excheck-3.2.min.js" />
+    <Content Include="Scripts\zTree\js\jquery.ztree.exedit-3.2.min.js" />
+    <Content Include="UserRights\AddUser.aspx" />
+    <Content Include="UserRights\EditRight.aspx" />
+    <Content Include="UserRights\EditRole.aspx" />
+    <Content Include="UserRights\Log.aspx" />
+    <Content Include="UserRights\ProjectSourceManage.aspx" />
+    <Content Include="UserRights\RightManage.aspx" />
+    <Content Include="UserRights\RoleManage.aspx" />
+    <Content Include="UserRights\RoleRightManage.aspx" />
+    <Content Include="UserRights\Service.aspx" />
+    <Content Include="UserRights\SoftList.aspx" />
+    <Content Include="UserRights\UserManage.aspx" />
+    <Content Include="UserRights\UserSystemManage.aspx" />
+    <Content Include="UserRights\UserRoleManage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\ReportDetail.aspx" />
+    <Content Include="Reports\ReportByDevice.aspx" />
+    <Content Include="Reports\ReportProcess.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\CPUManage.aspx.cs">
+      <DependentUpon>CPUManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CPUManage.aspx.designer.cs">
+      <DependentUpon>CPUManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ResolutionManage.aspx.cs">
+      <DependentUpon>ResolutionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ResolutionManage.aspx.designer.cs">
+      <DependentUpon>ResolutionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GJBBManage.aspx.cs">
+      <DependentUpon>GJBBManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GJBBManage.aspx.designer.cs">
+      <DependentUpon>GJBBManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BrandManage.aspx.cs">
+      <DependentUpon>BrandManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BrandManage.aspx.designer.cs">
+      <DependentUpon>BrandManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LanguageManage.aspx.cs">
+      <DependentUpon>LanguageManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LanguageManage.aspx.designer.cs">
+      <DependentUpon>LanguageManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\ChanelForAll.ascx.cs">
+      <DependentUpon>ChanelForAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\ChanelForAll.ascx.designer.cs">
+      <DependentUpon>ChanelForAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAdminControl.ascx.cs">
+      <DependentUpon>HeadAdminControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAdminControl.ascx.designer.cs">
+      <DependentUpon>HeadAdminControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAllControl.ascx.cs">
+      <DependentUpon>HeadAllControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAllControl.ascx.designer.cs">
+      <DependentUpon>HeadAllControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAllControlChannel.ascx.cs">
+      <DependentUpon>HeadAllControlChannel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadAllControlChannel.ascx.designer.cs">
+      <DependentUpon>HeadAllControlChannel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownControl.ascx.cs">
+      <DependentUpon>HeadDownControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownControl.ascx.designer.cs">
+      <DependentUpon>HeadDownControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownSpeedControl.ascx.cs">
+      <DependentUpon>HeadDownSpeedControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownSpeedControl.ascx.designer.cs">
+      <DependentUpon>HeadDownSpeedControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownTop100.ascx.cs">
+      <DependentUpon>HeadDownTop100.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadDownTop100.ascx.designer.cs">
+      <DependentUpon>HeadDownTop100.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadLinkTagControl.ascx.cs">
+      <DependentUpon>HeadLinkTagControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\HeadLinkTagControl.ascx.designer.cs">
+      <DependentUpon>HeadLinkTagControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\LinkTagForAll.ascx.cs">
+      <DependentUpon>LinkTagForAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\LinkTagForAll.ascx.designer.cs">
+      <DependentUpon>LinkTagForAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\LoadingControl.ascx.cs">
+      <DependentUpon>LoadingControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\LoadingControl.ascx.designer.cs">
+      <DependentUpon>LoadingControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\PeriodSelector.ascx.cs">
+      <DependentUpon>PeriodSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\PeriodSelector.ascx.designer.cs">
+      <DependentUpon>PeriodSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\PositionTag.ascx.cs">
+      <DependentUpon>PositionTag.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Controls\PositionTag.ascx.designer.cs">
+      <DependentUpon>PositionTag.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Controls\SelectChannelValue.cs" />
+    <Compile Include="Reports\GetMore.aspx.cs">
+      <DependentUpon>GetMore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GetMore.aspx.designer.cs">
+      <DependentUpon>GetMore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LifecycleReport.aspx.cs">
+      <DependentUpon>LifecycleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LifecycleReport.aspx.designer.cs">
+      <DependentUpon>LifecycleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LinkReport.aspx.cs">
+      <DependentUpon>LinkReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LinkReport.aspx.designer.cs">
+      <DependentUpon>LinkReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\sjqd\AllCustomStat.aspx.cs">
+      <DependentUpon>AllCustomStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\sjqd\AllCustomStat.aspx.designer.cs">
+      <DependentUpon>AllCustomStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\sjqd\ChannelCustom.ashx.cs">
+      <DependentUpon>ChannelCustom.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SoftVersionSjqd.aspx.cs">
+      <DependentUpon>SoftVersionSjqd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SoftVersionSjqd.aspx.designer.cs">
+      <DependentUpon>SoftVersionSjqd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUsersByArea.aspx.cs">
+      <DependentUpon>StatUsersByArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUsersByArea.aspx.designer.cs">
+      <DependentUpon>StatUsersByArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUsersByAreaTransverse.aspx.cs">
+      <DependentUpon>StatUsersByAreaTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUsersByAreaTransverse.aspx.designer.cs">
+      <DependentUpon>StatUsersByAreaTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUsersByVersion.aspx.cs">
+      <DependentUpon>StatUsersByVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUsersByVersion.aspx.designer.cs">
+      <DependentUpon>StatUsersByVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsersByVersion.aspx.cs">
+      <DependentUpon>StatRetainedUsersByVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsersByVersion.aspx.designer.cs">
+      <DependentUpon>StatRetainedUsersByVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsersByArea.aspx.cs">
+      <DependentUpon>StatRetainedUsersByArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsersByArea.aspx.designer.cs">
+      <DependentUpon>StatRetainedUsersByArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsers.aspx.cs">
+      <DependentUpon>StatRetainedUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatRetainedUsers.aspx.designer.cs">
+      <DependentUpon>StatRetainedUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RankOfChannels.aspx.cs">
+      <DependentUpon>RankOfChannels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RankOfChannels.aspx.designer.cs">
+      <DependentUpon>RankOfChannels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUsersByVersionTransverse.aspx.cs">
+      <DependentUpon>StatUsersByVersionTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUsersByVersionTransverse.aspx.designer.cs">
+      <DependentUpon>StatUsersByVersionTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUsersByCountryByVersion.aspx.cs">
+      <DependentUpon>StatUsersByCountryByVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUsersByCountryByVersion.aspx.designer.cs">
+      <DependentUpon>StatUsersByCountryByVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatRetainedActiveUsers.aspx.cs">
+      <DependentUpon>StatRetainedActiveUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatRetainedActiveUsers.aspx.designer.cs">
+      <DependentUpon>StatRetainedActiveUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatRetainedActiveUsersByArea.aspx.cs">
+      <DependentUpon>StatRetainedActiveUsersByArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatRetainedActiveUsersByArea.aspx.designer.cs">
+      <DependentUpon>StatRetainedActiveUsersByArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SBXHManage.aspx.cs">
+      <DependentUpon>SBXHManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SBXHManage.aspx.designer.cs">
+      <DependentUpon>SBXHManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SoftVersionManage.aspx.cs">
+      <DependentUpon>SoftVersionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SoftVersionManage.aspx.designer.cs">
+      <DependentUpon>SoftVersionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ReportBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CacheManager.aspx.cs">
+      <DependentUpon>CacheManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CacheManager.aspx.designer.cs">
+      <DependentUpon>CacheManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Services\LineChartHelper.cs" />
+    <Compile Include="Reports\Services\TableTemplateHelper.cs" />
+    <Compile Include="Reports\Services\TableTemplate.cs" />
+    <Compile Include="Reports\sjqd\AnalysisForChannelV2En.aspx.cs">
+      <DependentUpon>AnalysisForChannelV2En.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\sjqd\AnalysisForChannelV2En.aspx.designer.cs">
+      <DependentUpon>AnalysisForChannelV2En.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Top20Areas.aspx.cs">
+      <DependentUpon>Top20Areas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Top20Areas.aspx.designer.cs">
+      <DependentUpon>Top20Areas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCount.aspx.cs">
+      <DependentUpon>D_ResDownloadAvgCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCount.aspx.designer.cs">
+      <DependentUpon>D_ResDownloadAvgCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByArea.aspx.cs">
+      <DependentUpon>D_ResDownloadAvgCountByArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByArea.aspx.designer.cs">
+      <DependentUpon>D_ResDownloadAvgCountByArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByChannelType.aspx.cs">
+      <DependentUpon>D_ResDownloadAvgCountByChannelType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByChannelType.aspx.designer.cs">
+      <DependentUpon>D_ResDownloadAvgCountByChannelType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByVersion.aspx.cs">
+      <DependentUpon>D_ResDownloadAvgCountByVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadAvgCountByVersion.aspx.designer.cs">
+      <DependentUpon>D_ResDownloadAvgCountByVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResID.aspx.cs">
+      <DependentUpon>D_ResDownLoadByResID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResID.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadByResID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResIDDetail.aspx.cs">
+      <DependentUpon>D_ResDownLoadByResIDDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadByResIDDetail.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadByResIDDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadCateSumBySoft.aspx.cs">
+      <DependentUpon>D_ResDownLoadCateSumBySoft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadCateSumBySoft.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadCateSumBySoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistribution.aspx.cs">
+      <DependentUpon>D_ResDownLoadPositionDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistribution.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadPositionDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTag.aspx.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionByTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTag.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionByTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTagDetail.aspx.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionByTagDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionByTagDetail.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionByTagDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionDetail.aspx.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadPositionDistributionDetail.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadPositionDistributionDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankByArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankByArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea_Identifier.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankByArea_Identifier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByArea_Identifier.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankByArea_Identifier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByAuthorID.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankByAuthorID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByAuthorID.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankByAuthorID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankByClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankByClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass_Identifier.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankByClass_Identifier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankByClass_Identifier.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankByClass_Identifier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankBySoft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankBySoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft_Identifier.aspx.cs">
+      <DependentUpon>D_ResDownLoadRankBySoft_Identifier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadRankBySoft_Identifier.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadRankBySoft_Identifier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByAreaDistributionl.aspx.cs">
+      <DependentUpon>D_ResDownLoadSumByAreaDistributionl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByAreaDistributionl.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadSumByAreaDistributionl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByChannel.aspx.cs">
+      <DependentUpon>D_ResDownLoadSumByChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByChannel.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadSumByChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadSumByExtendAttr.aspx.cs">
+      <DependentUpon>D_ResDownloadSumByExtendAttr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownloadSumByExtendAttr.aspx.designer.cs">
+      <DependentUpon>D_ResDownloadSumByExtendAttr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumBySoft.aspx.cs">
+      <DependentUpon>D_ResDownLoadSumBySoft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumBySoft.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadSumBySoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByVersionDistributionl.aspx.cs">
+      <DependentUpon>D_ResDownLoadSumByVersionDistributionl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\D_DownlaodStatistics\D_ResDownLoadSumByVersionDistributionl.aspx.designer.cs">
+      <DependentUpon>D_ResDownLoadSumByVersionDistributionl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\RetainUsersByCate.aspx.cs">
+      <DependentUpon>RetainUsersByCate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\RetainUsersByCate.aspx.designer.cs">
+      <DependentUpon>RetainUsersByCate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_Manage\B_DownPositionManage.aspx.cs">
+      <DependentUpon>B_DownPositionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_Manage\B_DownPositionManage.aspx.designer.cs">
+      <DependentUpon>B_DownPositionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_Other\LinkAdStat.aspx.cs">
+      <DependentUpon>LinkAdStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_Other\LinkAdStat.aspx.designer.cs">
+      <DependentUpon>LinkAdStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_Other\LinkTagManager.aspx.cs">
+      <DependentUpon>LinkTagManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_Other\LinkTagManager.aspx.designer.cs">
+      <DependentUpon>LinkTagManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager.aspx.cs">
+      <DependentUpon>ChannelCustomerManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager.aspx.designer.cs">
+      <DependentUpon>ChannelCustomerManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomRetainUsers_Out.aspx.cs">
+      <DependentUpon>ChannelCustomRetainUsers_Out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomRetainUsers_Out.aspx.designer.cs">
+      <DependentUpon>ChannelCustomRetainUsers_Out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ISPUsersAnalysis.aspx.cs">
+      <DependentUpon>ISPUsersAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ISPUsersAnalysis.aspx.designer.cs">
+      <DependentUpon>ISPUsersAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\RetainUsersForExternalChannels.aspx.cs">
+      <DependentUpon>RetainUsersForExternalChannels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\RetainUsersForExternalChannels.aspx.designer.cs">
+      <DependentUpon>RetainUsersForExternalChannels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ExcelDownloader.ashx.cs">
+      <DependentUpon>ExcelDownloader.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GetMore.ashx.cs">
+      <DependentUpon>GetMore.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ReportAPI.ashx.cs">
+      <DependentUpon>ReportAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe1.aspx.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe1.aspx.designer.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe2.aspx.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe2.aspx.designer.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe3.aspx.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomerManager_Iframe3.aspx.designer.cs">
+      <DependentUpon>ChannelCustomerManager_Iframe3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\EditEtlState.aspx.cs">
+      <DependentUpon>EditEtlState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools\EditEtlState.aspx.designer.cs">
+      <DependentUpon>EditEtlState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\EtlStateManage.aspx.cs">
+      <DependentUpon>EtlStateManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools\EtlStateManage.aspx.designer.cs">
+      <DependentUpon>EtlStateManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ToolPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\ChannelRightDetail.aspx.cs">
+      <DependentUpon>ChannelRightDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\ChannelRightDetail.aspx.designer.cs">
+      <DependentUpon>ChannelRightDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\ChannelRightManager.aspx.cs">
+      <DependentUpon>ChannelRightManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\ChannelRightManager.aspx.designer.cs">
+      <DependentUpon>ChannelRightManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\EditSystem.aspx.cs">
+      <DependentUpon>EditSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\EditSystem.aspx.designer.cs">
+      <DependentUpon>EditSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\GetRights.ashx.cs">
+      <DependentUpon>GetRights.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\RightSysDescript.aspx.cs">
+      <DependentUpon>RightSysDescript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\RightSysDescript.aspx.designer.cs">
+      <DependentUpon>RightSysDescript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\SystemManage.aspx.cs">
+      <DependentUpon>SystemManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\SystemManage.aspx.designer.cs">
+      <DependentUpon>SystemManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\RoleSoftRightManage.aspx.cs">
+      <DependentUpon>RoleSoftRightManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\RoleSoftRightManage.aspx.designer.cs">
+      <DependentUpon>RoleSoftRightManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\HandlerBase.cs" />
+    <Compile Include="Base\MenuConfig.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCheck.ashx.cs">
+      <DependentUpon>LoginCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LostUserReport.aspx.cs">
+      <DependentUpon>LostUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LostUserReport.aspx.designer.cs">
+      <DependentUpon>LostUserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportStat.aspx.cs">
+      <DependentUpon>ReportStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportStat.aspx.designer.cs">
+      <DependentUpon>ReportStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ActivityUserReport.aspx.cs">
+      <DependentUpon>ActivityUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ActivityUserReport.aspx.designer.cs">
+      <DependentUpon>ActivityUserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\NewUserReport.aspx.cs">
+      <DependentUpon>NewUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\NewUserReport.aspx.designer.cs">
+      <DependentUpon>NewUserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\sjqd\LoginLogByIMEI.aspx.cs">
+      <DependentUpon>LoginLogByIMEI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\sjqd\LoginLogByIMEI.aspx.designer.cs">
+      <DependentUpon>LoginLogByIMEI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogList.aspx.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogList.aspx.designer.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\Controls\DataLogControl.ascx.cs">
+      <DependentUpon>DataLogControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor\Controls\DataLogControl.ascx.designer.cs">
+      <DependentUpon>DataLogControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\LogDataTransverse.aspx.cs">
+      <DependentUpon>LogDataTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor\LogDataTransverse.aspx.designer.cs">
+      <DependentUpon>LogDataTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\MonitorService.ashx.cs">
+      <DependentUpon>MonitorService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\MsmqMonitor.aspx.cs">
+      <DependentUpon>MsmqMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor\MsmqMonitor.aspx.designer.cs">
+      <DependentUpon>MsmqMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\ServiceLogDateReport.aspx.cs">
+      <DependentUpon>ServiceLogDateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor\ServiceLogDateReport.aspx.designer.cs">
+      <DependentUpon>ServiceLogDateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AllHandler.ashx.cs">
+      <DependentUpon>AllHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Services\LineChart.cs" />
+    <Compile Include="Reports\Services\TableHelper.cs" />
+    <Compile Include="Reports\sjqd\AnalysisForChannelV2.aspx.cs">
+      <DependentUpon>AnalysisForChannelV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\sjqd\AnalysisForChannelV2.aspx.designer.cs">
+      <DependentUpon>AnalysisForChannelV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DeveloperIndex.aspx.cs">
+      <DependentUpon>DeveloperIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DeveloperIndex.aspx.designer.cs">
+      <DependentUpon>DeveloperIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HanderForOption.ashx.cs">
+      <DependentUpon>HanderForOption.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\NoRight.aspx.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\NoRight.aspx.designer.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Services\JsonDemo.cs" />
+    <Compile Include="Reports\Services\Utility.cs" />
+    <Compile Include="Reports\StatUserAges.aspx.cs">
+      <DependentUpon>StatUserAges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUserAges.aspx.designer.cs">
+      <DependentUpon>StatUserAges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StatUserInterval.aspx.cs">
+      <DependentUpon>StatUserInterval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\StatUserInterval.aspx.designer.cs">
+      <DependentUpon>StatUserInterval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\ResolutionReport.aspx.cs">
+      <DependentUpon>ResolutionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\ResolutionReport.aspx.designer.cs">
+      <DependentUpon>ResolutionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\ServerHandler.ashx.cs">
+      <DependentUpon>ServerHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftBrandTransverse.aspx.cs">
+      <DependentUpon>SoftBrandTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftBrandTransverse.aspx.designer.cs">
+      <DependentUpon>SoftBrandTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftGJBBTransverse.aspx.cs">
+      <DependentUpon>SoftGJBBTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftGJBBTransverse.aspx.designer.cs">
+      <DependentUpon>SoftGJBBTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftLanTransverse.aspx.cs">
+      <DependentUpon>SoftLanTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftLanTransverse.aspx.designer.cs">
+      <DependentUpon>SoftLanTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftXhTransverse.aspx.cs">
+      <DependentUpon>SoftXhTransverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TransverseReports\SoftXhTransverse.aspx.designer.cs">
+      <DependentUpon>SoftXhTransverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\HttpService.ashx.cs">
+      <DependentUpon>HttpService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\NoRight.aspx.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\NoRight.aspx.designer.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomUsers.aspx.cs">
+      <DependentUpon>ChannelCustomUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports_New\R_UserAnalysis\ChannelCustomUsers.aspx.designer.cs">
+      <DependentUpon>ChannelCustomUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DataTableHelper.cs" />
+    <Compile Include="Services\SoftSessionService.ashx.cs">
+      <DependentUpon>SoftSessionService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDetail.aspx.cs">
+      <DependentUpon>ReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDetail.aspx.designer.cs">
+      <DependentUpon>ReportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportByDevice.aspx.cs">
+      <DependentUpon>ReportByDevice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportByDevice.aspx.designer.cs">
+      <DependentUpon>ReportByDevice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportProcess.aspx.cs">
+      <DependentUpon>ReportProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportProcess.aspx.designer.cs">
+      <DependentUpon>ReportProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\EditRight.aspx.cs">
+      <DependentUpon>EditRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\EditRight.aspx.designer.cs">
+      <DependentUpon>EditRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\EditRole.aspx.cs">
+      <DependentUpon>EditRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\EditRole.aspx.designer.cs">
+      <DependentUpon>EditRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\ProjectSourceManage.aspx.cs">
+      <DependentUpon>ProjectSourceManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\ProjectSourceManage.aspx.designer.cs">
+      <DependentUpon>ProjectSourceManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\RightManage.aspx.cs">
+      <DependentUpon>RightManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\RightManage.aspx.designer.cs">
+      <DependentUpon>RightManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\RoleManage.aspx.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\RoleManage.aspx.designer.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\RoleRightManage.aspx.cs">
+      <DependentUpon>RoleRightManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\RoleRightManage.aspx.designer.cs">
+      <DependentUpon>RoleRightManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\SoftList.aspx.cs">
+      <DependentUpon>SoftList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\SoftList.aspx.designer.cs">
+      <DependentUpon>SoftList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\URBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\UserSystemManage.aspx.cs">
+      <DependentUpon>UserSystemManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\UserSystemManage.aspx.designer.cs">
+      <DependentUpon>UserSystemManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRights\UserRoleManage.aspx.cs">
+      <DependentUpon>UserRoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRights\UserRoleManage.aspx.designer.cs">
+      <DependentUpon>UserRoleManage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Reports\AllHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\HanderForOption.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginCheck.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\00通用项目\net91com.Stat.Core\net91com.Stat.Core.csproj">
+      <Project>{15b4d9e7-b3d9-40d3-8c96-909a64ef363b}</Project>
+      <Name>net91com.Stat.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.DataAccess\net91com.Reports.DataAccess.csproj">
+      <Project>{805cc577-2a3d-45c6-9d32-ad2b2ee91e57}</Project>
+      <Name>net91com.Reports.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.Entities\net91com.Reports.Entities.csproj">
+      <Project>{61A449CA-C8C1-42AE-9121-798B2B0D0F0F}</Project>
+      <Name>net91com.Reports.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.Services\net91com.Reports.Services.csproj">
+      <Project>{616ADB82-6708-4DF5-807E-8E3B5C353BF0}</Project>
+      <Name>net91com.Reports.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.Tools\net91com.Reports.Tools.csproj">
+      <Project>{cb31005c-5d5f-4cf0-800f-ddfd48a68957}</Project>
+      <Name>net91com.Reports.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.UserRights\net91com.Reports.UserRights.csproj">
+      <Project>{1347A5E4-4C29-4168-A4C3-9B0A801BBB84}</Project>
+      <Name>net91com.Reports.UserRights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Stat.Services\net91com.Stat.Services.csproj">
+      <Project>{26F0BE38-4451-44D3-A923-D253BC5EA7B4}</Project>
+      <Name>net91com.Stat.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\TransverseReports\ServerHandler.ashx" />
+    <Content Include="Services\SoftSessionService.ashx" />
+    <Content Include="Monitor\MonitorService.ashx" />
+    <Content Include="Reports_New\HttpService.ashx" />
+    <Content Include="Services\ReportAPI.ashx" />
+    <None Include="Images\Thumbs.db" />
+    <None Include="Images\TreeLineImages\Thumbs.db" />
+    <None Include="Images\version_1\Thumbs.db" />
+    <Content Include="Reports\sjqd\ChannelCustom.ashx" />
+    <Content Include="Services\ExcelDownloader.ashx" />
+    <Content Include="Services\GetMore.ashx" />
+    <Content Include="UserRights\GetRights.ashx" />
+    <None Include="Properties\PublishProfiles\report.felink.com.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55687</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

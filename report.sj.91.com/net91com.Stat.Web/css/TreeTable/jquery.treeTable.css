@@ -1,0 +1,6 @@
+.tree_table .node, .tree_table .active_node {width:16px;height:16px;border: medium none; margin: 0; padding: 0;display: inline-block;}
+.tree_table .active_node {cursor: pointer;}
+.tree_table .open, .tree_table .last_open{background:url(./allbgs.png) no-repeat 0px 0px;width:16px;}
+.tree_table .shut, .tree_table .last_shut{background:url(./allbgs.png) no-repeat -16px 0px;width:16px;}
+.tree_table .hover_open, .tree_table .hover_last_open{background:url(./allbgs.png) no-repeat -32px 0px;width:16px;}
+.tree_table .hover_shut, .tree_table .hover_last_shut{background:url(./allbgs.png) no-repeat -48px 0px;width:16px;}

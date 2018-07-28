@@ -1,0 +1,17 @@
+﻿
+body
+{
+	font-family: Arial, "微软雅黑";
+	font-size: 12px;
+	margin: 0 auto;
+	background-color: #F3F4F9;
+}
+.maindiv
+{
+	margin: 0 auto;
+	width: 98%;
+}
+
+td{font-size:12px;}
+input,select,textarea,font{font-size:12px;}
+

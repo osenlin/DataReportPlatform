@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{616ADB82-6708-4DF5-807E-8E3B5C353BF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net91com.Reports.Services</RootNamespace>
+    <AssemblyName>net91com.Reports.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KinnSoft.Excel.OfficeOpenXml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\net91com.Stat.Web\Assembly\KinnSoft.Excel.OfficeOpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\00通用项目\Reference\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Common">
+      <HintPath>..\net91com.Stat.Web\Assembly\net91com.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.Core, Version=1.0.4753.32578, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\net91com.Stat.Web\Assembly\net91com.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="net91com.MobileResRecommend.Utility, Version=1.2012.12.24, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\net91com.Stat.Web\Assembly\net91com.MobileResRecommend.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\net91com.Stat.Web\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QQWryExt">
+      <HintPath>..\net91com.Stat.Web\Assembly\QQWryExt.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.ResourceDataAccess, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\net91com.Stat.Web\Assembly\Res91com.ResourceDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Res91com.SoftModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\net91com.Stat.Web\Assembly\Res91com.SoftModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonServices\BaseService.cs" />
+    <Compile Include="CommonServices\B_BaseTool\B_BaseDownPositionService.cs" />
+    <Compile Include="CommonServices\B_BaseTool\B_BaseToolService.cs" />
+    <Compile Include="CommonServices\D_DownloadStat\D_StatDownCountSum_Service.cs" />
+    <Compile Include="CommonServices\D_DownloadStat\D_StatDownPositionDistribution_Service.cs" />
+    <Compile Include="CommonServices\D_DownloadStat\D_StatDownRank_Service.cs" />
+    <Compile Include="CommonServices\Other\LinkTagService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\CfgChannelService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_Areas_Service.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_StatMac2Imei_Service.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_ISPService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_NetModesService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_SoftVersionsService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_StatRetainedUsersService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\Sjqd_StatUsersByISPService.cs" />
+    <Compile Include="CommonServices\SjqdUserStat\StatUsersService.cs" />
+    <Compile Include="CommonServices\Tool\ToolService.cs" />
+    <Compile Include="HttpServiceBase.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\Abs_HttpDownLoad.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownAvgCountByAreaImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownAvgCountByChannelTypeImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownAvgCountByVersionImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownAvgCountImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountCateSumBySoftImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByAreaDistributionImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByChannelImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByExtendAttrLstImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByResIDDetailImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByResIDImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumBySoftImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownCountSumByVerisionDistributionImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownPositionDistributionByTagDetailImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownPositionDistributionByTagImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownPositionDistributionDetailImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownPositionDistributionImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankByAreaMImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankByArea_IdentifierImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankByAuthorIDImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankByClassMImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankByClass_IdentifierImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankBySoftMImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\D_HttpDownStatDownRankBySoft_IdentifierImpl.cs" />
+    <Compile Include="HttpServices\D_DownloadStatistics_Service\MAbs_HttpDownLoad.cs" />
+    <Compile Include="HttpServices\HttpUtilityService.cs" />
+    <Compile Include="HttpServices\R_Manage\B_HttpDownPositionManage.cs" />
+    <Compile Include="HttpServices\R_Other_Service\HttpLinkAdStat.cs" />
+    <Compile Include="HttpServices\R_Other_Service\HttpLinkTagManager.cs" />
+    <Compile Include="HttpServices\R_Tool_Service\ClusterStatLogService.cs" />
+    <Compile Include="HttpServices\R_Tool_Service\HttpToolService.cs" />
+    <Compile Include="HttpServices\R_UserAnalysis_Service\HttpChannelCustomerManager.cs" />
+    <Compile Include="HttpServices\R_UserAnalysis_Service\HttpRetainUsersForExternalChannels.cs" />
+    <Compile Include="HttpServices\R_UserAnalysis_Service\HttpChannelCustomUsers.cs" />
+    <Compile Include="HttpServices\R_UserAnalysis_Service\HttpISPUserAnalysis.cs" />
+    <Compile Include="HttpServices\R_UserAnalysis_Service\HttpStatMac2Imei.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesBaseEntity\JQueryDataTablesRequestHelper.cs" />
+    <Compile Include="ServicesBaseEntity\Result.cs" />
+    <Compile Include="ServicesBaseEntity\RightEnum.cs" />
+    <Compile Include="UtilityHelp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonServices\Admin\" />
+    <Folder Include="HttpServices\R_TerminalAnalysis_Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\00通用项目\net91com.Stat.Core\net91com.Stat.Core.csproj">
+      <Project>{15b4d9e7-b3d9-40d3-8c96-909a64ef363b}</Project>
+      <Name>net91com.Stat.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.DataAccess\net91com.Reports.DataAccess.csproj">
+      <Project>{805CC577-2A3D-45C6-9D32-AD2B2EE91E57}</Project>
+      <Name>net91com.Reports.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.Entities\net91com.Reports.Entities.csproj">
+      <Project>{61A449CA-C8C1-42AE-9121-798B2B0D0F0F}</Project>
+      <Name>net91com.Reports.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Reports.UserRights\net91com.Reports.UserRights.csproj">
+      <Project>{1347A5E4-4C29-4168-A4C3-9B0A801BBB84}</Project>
+      <Name>net91com.Reports.UserRights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net91com.Stat.Services\net91com.Stat.Services.csproj">
+      <Project>{26F0BE38-4451-44D3-A923-D253BC5EA7B4}</Project>
+      <Name>net91com.Stat.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
